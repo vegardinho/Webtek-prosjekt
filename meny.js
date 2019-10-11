@@ -1,6 +1,6 @@
 const mat = [
     {
-        navn: "lasagne",
+        navn: "Lasagne",
         pris: 120,
         inneholder: "Ost, pasta, kjøttdeig, tomatsaus, basilikum",
         allergener: ["laktose"]
@@ -18,5 +18,21 @@ const mat = [
         pris: 89,
         inneholder: "Chilli, kjøttdeig, løk, bønner",
         allergener: []
+    },
+
+    {
+        navn: "Spaghetti Bolognese",
+        pris: 89,
+        inneholder: "Kjøttdeig, tomatsaus, løk, pasta, oregano",
+        allergener: ["gluten"]
     }
 ]
+
+
+function populate_meny()
+{
+    for (var item in mat)
+    {      
+        document.getElementById("matretter").innerHTML += `<div id="`+mat[item].navn+`" class="matretter">`+ mat[item].navn +`</div>`
+    }
+}
