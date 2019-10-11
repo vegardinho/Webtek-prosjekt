@@ -1,0 +1,18 @@
+html {
+   font-family: 'Keep-Calm', 'Arial Bold';
+   color: black;
+   background-color: white;
+   margin: auto;
+   padding: 50px;
+   width: 70%;
+}
+
+p {
+   font-family: 'Roboto Slab', 'Georgia';
+}
+
+a {
+   color: #FF8519;
+}
+
+
