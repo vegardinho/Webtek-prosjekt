@@ -45,3 +45,11 @@ footer {
     width: 100%;
     padding: 50px 0 50px 0;
 }
+
+/* Main */
+main div.content {
+    height: 1500px;
+    max-width: 60%;
+    margin: auto;
+    background-color: white;
+}
