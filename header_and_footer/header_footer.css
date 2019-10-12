@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: lightgray;
 }
 
 div#header {
@@ -10,6 +11,8 @@ div#header {
     background-color: white;
     box-shadow: 1px 1px 10px black ;
     display: inline-block;
+    position: fixed;
+    top: 0;
 }
 
 div.logo {
