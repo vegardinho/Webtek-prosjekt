@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div#header {
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.logo {
+    width: 15%;
+    float: left;
+    background-color: green;
+}
+
+div.navbar {
+    width: 85%;
+    float: right;
+    background-color: brown;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li.nav_element {
+    display: block;
+    list-style-type: none;
+    padding: 15px 10px 15px 10px;
+    background-color: lightgray;
+    float: left;
+}
+
