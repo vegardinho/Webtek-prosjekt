@@ -17,7 +17,6 @@ div#header {
 
 div.logo {
     width: 20%;
-    float: left;
     background-color: green;
     display: inline-block;
 }
