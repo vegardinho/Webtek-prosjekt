@@ -7,18 +7,16 @@ div#header {
     width:100%;
     margin: 0;
     padding: 0;
+    background-color: white;
+    box-shadow: 1px 1px 10px black ;
+    display: inline-block;
 }
 
 div.logo {
-    width: 15%;
+    width: 20%;
     float: left;
     background-color: green;
-}
-
-div.navbar {
-    width: 85%;
-    float: right;
-    background-color: brown;
+    display: inline-block;
 }
 
 ul {
@@ -27,10 +25,16 @@ ul {
 }
 
 li.nav_element {
-    display: block;
     list-style-type: none;
-    padding: 15px 10px 15px 10px;
-    background-color: lightgray;
+    font-size: 2em;
     float: left;
+}
+
+li a {
+    display:block;
+    padding: 20px 40px 20px 40px;
+    background-color: white;
+    text-decoration: none;
+    color: coral;
 }
 
