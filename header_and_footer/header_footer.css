@@ -40,3 +40,8 @@ li a {
     color: coral;
 }
 
+/* Footer */
+footer {
+    width: 100%;
+    padding: 50px 0 50px 0;
+}
