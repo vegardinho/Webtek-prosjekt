@@ -16,7 +16,8 @@
             #content
             {
                 height: 100vh;
-                width: 100vw;
+                width: 80vw;
+                margin: 0 auto;
             }
         
             #meny
@@ -50,6 +51,9 @@
             #allergener > *, #onsker > *
             {
                 margin: 0;
+                font-size: 1.5em;
+                padding-left: 8%;
+                padding-top: 5%;
             }
 
             #onsker
@@ -100,15 +104,15 @@
 
                     <label for="laktose">
                         Laktose
-                        <input type="checkbox" name="laktose" id="laktose">
+                        <input type="checkbox" name="laktose" id="laktose" class="allergy" onclick="sort_allergies()">
                     </label>
                     <label for="gluten">
                         Gluten
-                        <input type="checkbox" name="gluten" id="gluten">
+                        <input type="checkbox" name="gluten" id="gluten" class="allergy" onclick="sort_allergies()">
                     </label>
                     <label for="notter">
                         Nøtter
-                        <input type="checkbox" name="notter" id="notter">
+                        <input type="checkbox" name="notter" id="notter" class="allergy" onclick="sort_allergies()">
                     </label>
 
                 </div>
