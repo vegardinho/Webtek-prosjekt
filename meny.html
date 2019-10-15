@@ -16,7 +16,8 @@
             #content
             {
                 height: 100vh;
-                width: 100vw;
+                width: 75vw;
+                margin: 0 auto;
             }
         
             #meny
@@ -50,6 +51,9 @@
             #allergener > *, #onsker > *
             {
                 margin: 0;
+                font-size: 1.5em;
+                padding-left: 8%;
+                padding-top: 5%;
             }
 
             #onsker
@@ -70,6 +74,14 @@
                 border-bottom: 2px solid gray;
             }
 
+            #takeaway_handlekurv
+            {
+                width: 100%;
+                height: 70%;
+                background: gold;
+                border-top: 2px solid gray;
+            }
+
             #matretter
             {
                 width: 100%;
@@ -84,6 +96,31 @@
                 background: rgb(77, 185, 77);
                 border-top: 2px solid gray;
                 border-bottom: 2px solid gray;
+                font-size: 2em;
+            }
+
+            .inneholder
+            {
+                font-size: 0.8em;
+            }
+
+            .matretter > .mat_tittel,.matretter > .inneholder
+            {
+                margin-left: 5%;
+            }
+
+            .matretter > *
+            {
+                margin-top: 5%;
+            }
+            
+            .order_button
+            {
+                position: relative;
+                height: 30%;
+                width: 25%;
+                font-size: 0.6em;
+                margin-left: 5%
             }
 
         </style>
@@ -100,15 +137,15 @@
 
                     <label for="laktose">
                         Laktose
-                        <input type="checkbox" name="laktose" id="laktose">
+                        <input type="checkbox" name="laktose" id="laktose" class="allergy" onclick="sort_allergies()">
                     </label>
                     <label for="gluten">
                         Gluten
-                        <input type="checkbox" name="gluten" id="gluten">
+                        <input type="checkbox" name="gluten" id="gluten" class="allergy" onclick="sort_allergies()">
                     </label>
                     <label for="notter">
                         Nøtter
-                        <input type="checkbox" name="notter" id="notter">
+                        <input type="checkbox" name="notter" id="notter" class="allergy" onclick="sort_allergies()">
                     </label>
 
                 </div>
@@ -146,6 +183,10 @@
 
                 <div id="takeaway_title">
                     
+                </div>
+
+                <div id="takeaway_handlekurv">
+
                 </div>
 
             </div>
