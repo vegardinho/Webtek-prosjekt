@@ -20,11 +20,21 @@
                         <input type="email" placeholder="E-mail">
                     </label>
                     <label>Mobilnummer:
-                        <input type="number" placeholder="Mobilnummer">
+                        <input type="tel" placeholder="Mobilnummer">
                     </label>
                     <label>Tilbakemelding:
-                        <input type="textarea" placeholder="Fritekst">
+                        <textarea rows="10"  id="tilbakemelding">
+                            
+                        </textarea> 
                     </label>
+                    <label>Send til:
+                        <input class="sendTil" type="checkbox" name="restauranteier" value="restauranteier">Restauranteier
+                        <input class="sendTil" type="checkbox" name="webmaster" value="webmaster">Webmaster
+                    </label>
+
+                    <input type="submit" id="send">
+
+                
                 </form>
         </div>
 
