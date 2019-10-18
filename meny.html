@@ -1,12 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Samspiseriet</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Meny - SamSpiseriet</title>
+
+        <style>
+
+            body
+            {
+                margin: 0px;
+            }
+
+            #content
+            {
+                height: 100vh;
+                width: 75vw;
+                margin: 0 auto;
+            }
+        
+            #meny
+            {
+                position: relative;
+                height: 100%;
+                width: calc(50% - 2px);
+                background: red;
+                float: left;
+                border-right: 2px solid gray;
+            }
+
+            #takeaway
+            {
+                position: relative;
+                height: 100%;
+                width: calc(50% - 2px);
+                background: blue;
+                float: left;
+                border-left: 2px solid gray;
+            }
+
+            #allergener
+            {
+                width: 100%;
+                height: 15%;
+                background: orange;
+                /* border-bottom: 2px solid gray; */
+            }
+
+            #allergener > *, #onsker > *
+            {
+                margin: 0;
+                font-size: 1.5em;
+                padding-left: 8%;
+                padding-top: 5%;
+            }
+
+            #onsker
+            {
+                width: 100%;
+                height: 15%;
+                background: green;
+                border-bottom: 2px solid gray;
+            }
+
+
+
+            #takeaway_title
+            {
+                width: 100%;
+                height: 30%;
+                background: purple;
+                border-bottom: 2px solid gray;
+            }
+
+            #takeaway_handlekurv
+            {
+                width: 100%;
+                height: 70%;
+                background: gold;
+                border-top: 2px solid gray;
+            }
+
+            #matretter
+            {
+                width: 100%;
+                height: 70%;
+                background: lightblue;
+            }
+
+            .matretter
+            {
+                height: calc(20vh - 4px);
+                width: 100%;
+                background: rgb(77, 185, 77);
+                border-top: 2px solid gray;
+                border-bottom: 2px solid gray;
+                font-size: 2em;
+            }
+
+            .inneholder
+            {
+                font-size: 0.8em;
+            }
+
+            .matretter > .mat_tittel,.matretter > .inneholder
+            {
+                margin-left: 5%;
+            }
+
+            .matretter > *
+            {
+                margin-top: 5%;
+            }
+            
+            .order_button
+            {
+                position: relative;
+                height: 30%;
+                width: 25%;
+                font-size: 0.6em;
+                margin-left: 5%
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="content">
+
+            <div id="meny">
+
+                <div id="allergener">
+
+                    <h4>Allergener</h4>
+
+                    <label for="laktose">
+                        Laktose
+                        <input type="checkbox" name="laktose" id="laktose" class="allergy" onclick="sort_allergies()">
+                    </label>
+                    <label for="gluten">
+                        Gluten
+                        <input type="checkbox" name="gluten" id="gluten" class="allergy" onclick="sort_allergies()">
+                    </label>
+                    <label for="notter">
+                        Nøtter
+                        <input type="checkbox" name="notter" id="notter" class="allergy" onclick="sort_allergies()">
+                    </label>
+
+                </div>
+
+                <div id="onsker">
+
+                    <h4>Jeg ønsker: </h4>
+
+                    <label for="vegetar">
+                        Vegetar
+                        <input type="checkbox" name="vegetar" id="vegetar">
+                    </label>
+
+                    <label for="sterk">
+                        Sterk
+                        <input type="checkbox" name="styrke" id="sterk">
+                    </label>
+
+                    <label for="mild">
+                        Mild
+                        <input type="checkbox" name="styrke" id="mild">
+                    </label>
+
+                </div>
+
+                <div id="matretter">
+
+                    
     
-</body>
+                </div>
+
+            </div>
+
+            <div id="takeaway">
+
+                <div id="takeaway_title">
+                    
+                </div>
+
+                <div id="takeaway_handlekurv">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="meny.js"></script>
+    </body>
 </html>
