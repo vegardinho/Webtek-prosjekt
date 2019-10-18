@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+div#header {
+    width:100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-shadow: 1px 1px 10px black ;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+}
+
+div.logo {
+    width: 20%;
+    background-color: green;
+    display: inline-block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li.nav_element {
+    list-style-type: none;
+    font-size: 2em;
+    float: left;
+}
+
+li a {
+    display:block;
+    padding: 20px 40px 20px 40px;
+    background-color: white;
+    text-decoration: none;
+    color: coral;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    background-color: #242424;
+}
+
+/* Main */
+main div.content {
+    height: 1500px;
+    max-width: 60%;
+    margin: auto;
+    background-color: white;
+}
