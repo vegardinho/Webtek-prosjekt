@@ -5,12 +5,19 @@ function active(page) {
     nav[page].style.backgroundColor = '#ff7800'
 }
 
-if (document.URL.contains(Hjem)) {
-    active(0)
-} else if (document.URL.contains(Meny)) {
+
+
+const index = document.getElementById('#index_js')
+const meny = document.getElementById('#meny_js')
+const kontakt = document.getElementById('#kontakt_js')
+const om_oss = document.getElementById('#om_oss_js')
+
+if (document.contains(index)) {
+    console.log('HEI')
+} else if (document.contains(meny)) {
     active(1)
-} else if (document.URL.contains(Om_oss)) {
+} else if (document.contains(om_oss)) {
     active(2)
-} else if (docuemnt.URL.contains(Kontakt)) {
+} else if (document.contains(kontakt)) {
     active(3)
 }
