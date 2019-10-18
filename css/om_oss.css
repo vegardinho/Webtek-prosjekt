@@ -6,9 +6,12 @@
 .fullbredde {
    width: 100%;
    height: auto;
+   padding: 5px;
 }
 
-.kolonner {
-   display: flex;
-   flex-direction: row;
+.kolonne {
+   box-sizing: border-box;
+   float: left;
+   width: 33.3333%;
+   padding: 10px;
 }
