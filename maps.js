@@ -13,5 +13,19 @@ function hentKart() {
         map: kart,
         title: "Vårt sted! :D"
     })
-    
 }
+
+// let form_navn = document.getElementById("navn")
+// let form_mail = document.getElementById("mail")
+
+
+// function send_form() {
+//     if (form_navn.value === " " && form_mail.value === " ") {
+//         alert("jnjf")
+//         console.log("feil")
+//     }
+//     else {
+//         form.submit()
+//         console.log("submit")
+//     }
+// }
