@@ -7,7 +7,7 @@ body {
    width: 70%;
 }
 
-p {
+p, label {
    font-family: 'Roboto Slab', 'Georgia';
 }
 
