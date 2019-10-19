@@ -12,12 +12,12 @@
     <body>
         <div id="sporreskjema">
             <h1>Kontakt oss</h1>
-                <form> <!-- action, method, id? -->
+                <form id="form"> <!-- action, method, id? -->
                     <label>Navn: 
-                        <input type="name" placeholder="Ditt navn">
+                        <input type="name" placeholder="Ditt navn" id="navn">
                     </label>
                     <label>E-mail:
-                        <input type="email" placeholder="E-mail">
+                        <input type="email" placeholder="E-mail" id="mail">
                     </label>
                     <label>Mobilnummer:
                         <input type="tel" placeholder="Mobilnummer">
@@ -27,18 +27,25 @@
                             
                         </textarea> 
                     </label>
-                    <label>Send til:
-                        <input class="sendTil" type="checkbox" name="restauranteier" value="restauranteier">Restauranteier
-                        <input class="sendTil" type="checkbox" name="webmaster" value="webmaster">Webmaster
+
+                    <p>Send til:</p>
+                    <label class="mottaker_kontakt">Restauranteier
+                        <input type="checkbox" name="restauranteier" value="restauranteier">
+                    </label>
+                    <label class="mottaker_kontakt">Webmaster
+                        <input type="checkbox" name="webmaster" value="webmaster">
                     </label>
 
-                    <input type="submit" id="send">
-
-                
+                    <input type="submit" id="send" onclick="send_form()">
                 </form>
+
+                <div id="kart_boks"></div>
         </div>
 
-        <!-- <script src="kontakt.js"></script> -->
+        <script src="maps.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV2Nyq4wq-we8qwZvF2JkEwF4nO1iq2Bk&callback=hentKart">
+        </script>        
     </body>
 </html>
 
