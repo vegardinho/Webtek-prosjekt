@@ -17,8 +17,9 @@ div#header {
 
 div.logo {
     width: 20%;
+    padding: 0 10px;
     background-color: green;
-    display: inline-block;
+    float: left;
 }
 
 ul {
@@ -38,6 +39,11 @@ li a {
     background-color: white;
     text-decoration: none;
     color: coral;
+}
+
+li a:hover {
+    background-color: #eaeaea;
+    color: #b35300;
 }
 
 /* Footer */
