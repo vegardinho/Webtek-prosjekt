@@ -13,7 +13,6 @@ p {
 
 h1,h2,h3,h4,h5 {
    text-align: center;
-
 }
 
 .hvit_boks {
@@ -30,4 +29,29 @@ h1,h2,h3,h4,h5 {
 
 a {
    color: #FF8519;
+}
+
+
+/*BRUKES I OM_OSS*/
+.bilde {
+   width: 30%;
+   height: auto;
+}
+
+.kolonne .fullbredde:hover {
+   transform: scale(1.03);
+   transition: transform 0.25s;
+}
+
+.fullbredde {
+   width: 100%;
+   height: auto;
+   padding: 5px;
+}
+
+.kolonne {
+   box-sizing: border-box;
+   float: left;
+   width: 33.3333%;
+   padding: 10px;
 }
