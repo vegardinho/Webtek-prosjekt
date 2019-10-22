@@ -1,3 +1,9 @@
+@font-face {
+   font-family: "Keep-Calm";
+   src: local("KeepCalm-Medium.ttf") format("truetype"),
+        url("../fonts/KeepCalm-Medium.ttf") format("truetype");
+}
+
 body {
    font-family: 'Keep-Calm', 'Arial Bold';
    color: black;
