@@ -1,14 +1,31 @@
-html {
+body {
    font-family: 'Keep-Calm', 'Arial Bold';
    color: black;
-   background-color: white;
+   background-color: lightgrey;
    margin: auto;
    padding: 50px;
    width: 70%;
 }
 
-p {
+p, label {
    font-family: 'Roboto Slab', 'Georgia';
+}
+
+h1,h2,h3,h4,h5 {
+   text-align: center;
+}
+
+.hvit_boks {
+   width: 100%;
+   height: 100%;
+   background: white;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   padding-left: 40px;
+   padding-right: 40px;
+   box-sizing: border-box;
 }
 
 a {
@@ -16,3 +33,25 @@ a {
 }
 
 
+/*BRUKES I OM_OSS*/
+.bilde {
+   width: 30%;
+   height: auto;
+}
+
+.kolonne .fullbredde:hover {
+   transform: scale(1.03);
+   transition: transform 0.25s;
+}
+
+.fullbredde {
+   width: 100%;
+   height: auto;
+}
+
+.kolonne {
+   box-sizing: border-box;
+   float: left;
+   width: 33.3333%;
+   padding: 10px;
+}
