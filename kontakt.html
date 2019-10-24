@@ -4,41 +4,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="css/kontakt_oss.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/kontakt_oss.css">
         <title>Kontakt oss - Samspiseriet</title>
     </head>
 
     <body>
         <div id="sporreskjema">
             <h1>Kontakt oss</h1>
-                <form id="form" onsubmit="valider()"> <!-- action, method, id? -adassada-->
-                    <label>Navn: 
+                <form id="form" onsubmit="send_form()"> <!-- action, method, id? -adassada-->
+                    <label>Navn 
                         <input type="name" placeholder="Ditt navn" id="navn" autofocus>
                     </label>
-                    <label>E-mail:
-                        <input type="email" placeholder="E-mail" id="mail" formnovalidate >
+                    <label>E-post * 
+                        <!-- Krever at email skrives inn -->
+                        <input required type="email" placeholder="E-mail (påkrevd)" id="mail"  >
                     </label>
-                    <label>Mobilnummer:
-                        <input type="tel" placeholder="Mobilnummer" id="mobil" formnovalidate>
+                    <label>Mobilnummer
+                        <input type="tel" placeholder="Mobilnummer" id="mobil" >
                     </label>
-                    <label>Tilbakemelding:
-                        <textarea rows="10"  id="tilbakemelding" placeholder="Denne teksten må ha minimum 10 tegn" formnovalidate></textarea> 
+                    <label>Tilbakemelding
+                        <!-- Krever at teksten er minimum er 10 tegn -->
+                        <textarea required minlength="10" rows="10"  id="tilbakemelding" placeholder="Denne teksten må ha minimum 10 tegn"></textarea> 
                     </label>
 
                     <p>Send til:</p>
                     <label class="mottaker_kontakt">Restauranteier
-                        <input type="checkbox" name="restauranteier" value="restauranteier">
+                        <input required type="radio" name="mottaker" value="restauranteier" >
                     </label>
                     <label class="mottaker_kontakt">Webmaster
-                        <input type="checkbox" name="webmaster" value="webmaster">
+                        <input required type="radio" name="mottaker" value="webmaster">
                     </label>
 
                     <input type="submit" id="send">
                 </form>
 
-                <div id="kart_boks"></div>
         </div>
+        <div id="kart_boks"></div>
 
         <script src="maps.js"></script>
         <script async defer

@@ -17,20 +17,15 @@ function hentKart() {
 
 
 function send_form() {
-    // alert(tilbakemelding.value)
-    console.log("hei")
+    let navn = document.getElementById("navn").value 
+    let epost = document.getElementById("mail").value
+    let mobil = document.getElementById("mobil").value
+    let tekst = document.getElementById("tilbakemelding").value
+    let sporreskjema = document.getElementById("sporreskjema")
+
+    sporreskjema.outerHTML = "Takk for tilbakemeldingen "
+
+
+    // alert("Takk for tilbakemeldingen", navn)
 }
 
-function valider() {
-    var mail = document.getElementById("mail")
-    var mobil = document.getElementById("mobil")
-    var tilbakemelding = document.getElementById("tilbakemelding")
-
-    if (mail.value == "" && mobil.value == "") {
-        alert("Du må skrive inn enten mobilnummer eller e-postadresse");
-    } else if (tilbakemelding.value < 10) {
-        alert("Tilbakemeldingen må være på minst 10 tegn")
-    } else {
-        send_form();
-    }
-}
