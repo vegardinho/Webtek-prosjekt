@@ -39,11 +39,6 @@ a {
    height: auto;
 }
 
-.kolonne .fullbredde:hover {
-   transform: scale(1.03);
-   transition: transform 0.25s;
-}
-
 .fullbredde {
    width: 100%;
    height: auto;
@@ -55,4 +50,29 @@ a {
    float: left;
    width: 33.3333%;
    padding: 10px;
+   position: relative;
+}
+
+.fullbredde:hover {
+   transform: scale(1.03);
+   opacity: 0.25;
+   transition: 0.25s;
+}
+
+.fullbredde {
+   transition: 0.25s;
+}
+
+.reveal_text {
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.kolonne:hover .reveal_text {
+   opacity: 1;
+   transition: 0.25s;
 }
