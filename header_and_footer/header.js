@@ -1,3 +1,26 @@
+document.body.innerHTML =
+`<header>
+
+    <div id="header">
+
+        <div class="logo">
+            <img src="" alt="Logo Samspiseriet">
+        </div>
+
+        <div class="nav_bar">
+            <ul>
+                <li class="nav_element"><a href="">Hjem</a></li>
+                <li class="nav_element"><a href="">Meny</a></li>
+                <li class="nav_element"><a href="">Om oss</a></li>
+                <li class="nav_element"><a href="">Kontakt</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</header>` +document.body.innerHTML
+
+
 const nav = document.querySelectorAll('li.nav_element a')
 
 function active(page) {
