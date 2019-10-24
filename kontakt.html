@@ -12,20 +12,18 @@
     <body>
         <div id="sporreskjema">
             <h1>Kontakt oss</h1>
-                <form id="form"> <!-- action, method, id? -adassada-->
+                <form id="form" onsubmit="valider()"> <!-- action, method, id? -adassada-->
                     <label>Navn: 
-                        <input type="name" placeholder="Ditt navn" id="navn">
+                        <input type="name" placeholder="Ditt navn" id="navn" autofocus>
                     </label>
                     <label>E-mail:
-                        <input type="email" placeholder="E-mail" id="mail">
+                        <input type="email" placeholder="E-mail" id="mail" formnovalidate >
                     </label>
                     <label>Mobilnummer:
-                        <input type="tel" placeholder="Mobilnummer">
+                        <input type="tel" placeholder="Mobilnummer" id="mobil" formnovalidate>
                     </label>
                     <label>Tilbakemelding:
-                        <textarea rows="10"  id="tilbakemelding">
-                            
-                        </textarea> 
+                        <textarea rows="10"  id="tilbakemelding" placeholder="Denne teksten må ha minimum 10 tegn" formnovalidate></textarea> 
                     </label>
 
                     <p>Send til:</p>
@@ -36,7 +34,7 @@
                         <input type="checkbox" name="webmaster" value="webmaster">
                     </label>
 
-                    <input type="submit" id="send" onclick="send_form()">
+                    <input type="submit" id="send">
                 </form>
 
                 <div id="kart_boks"></div>

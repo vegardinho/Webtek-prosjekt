@@ -15,17 +15,22 @@ function hentKart() {
     })
 }
 
-// let form_navn = document.getElementById("navn")
-// let form_mail = document.getElementById("mail")
 
+function send_form() {
+    // alert(tilbakemelding.value)
+    console.log("hei")
+}
 
-// function send_form() {
-//     if (form_navn.value === " " && form_mail.value === " ") {
-//         alert("jnjf")
-//         console.log("feil")
-//     }
-//     else {
-//         form.submit()
-//         console.log("submit")
-//     }
-// }
+function valider() {
+    var mail = document.getElementById("mail")
+    var mobil = document.getElementById("mobil")
+    var tilbakemelding = document.getElementById("tilbakemelding")
+
+    if (mail.value == "" && mobil.value == "") {
+        alert("Du må skrive inn enten mobilnummer eller e-postadresse");
+    } else if (tilbakemelding.value < 10) {
+        alert("Tilbakemeldingen må være på minst 10 tegn")
+    } else {
+        send_form();
+    }
+}
