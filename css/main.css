@@ -5,12 +5,9 @@
 }
 
 body {
-   font-family: 'Keep-Calm', 'Arial Bold';
-   color: black;
    background-color: lightgrey;
-   margin: auto;
-   padding: 50px;
-   width: 70%;
+   margin: 0;
+   padding: 0;
 }
 
 p, label {
@@ -19,6 +16,14 @@ p, label {
 
 h1,h2,h3,h4,h5 {
    text-align: center;
+   font-family: 'Keep-Calm', 'Arial Bold';
+   color: black;
+}
+
+selector {
+   margin: auto;
+   padding: 50px;
+   width: 70%;
 }
 
 .hvit_boks {
