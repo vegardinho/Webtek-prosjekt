@@ -66,3 +66,13 @@ a {
    width: 33.3333%;
    padding: 10px;
 }
+
+/* BRUKES I INDEX */
+#index_foreground {
+   width: 100%;
+}
+
+#index_background {
+   width: 70%;
+   margin: auto;
+}
