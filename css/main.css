@@ -68,11 +68,53 @@ a {
 }
 
 /* BRUKES I INDEX */
-#index_foreground {
+#index_background {
    width: 100%;
 }
 
-#index_background {
+#index_foreground {
    width: 70%;
+   margin: auto;
+   padding: 20px 0 20px 0;
+   background-color: green;
+   z-index: 2;
+}
+
+#news {
+   width: 70%;
+   margin: auto;
+}
+
+#news_header {
+   width: 100%;
+   text-align: center;
+   padding: 20px 0 20px 0;
+   margin: 20px 0 20px 0;
+   background-color: white;
+}
+
+.margin_box {
+   width: 100%;
+   padding: 20px 0 20px 0;
+   background-color: white;
+}
+
+.news_pic_wrapper {
+   width: 50%;
+   float: left;
+}
+
+.news_text_wrapper {
+   width: 50%;
+   float: right;
+}
+
+.news_pic {
+   width: 90%;
+   margin: auto;
+}
+
+.news_text {
+   width: 90%;
    margin: auto;
 }
