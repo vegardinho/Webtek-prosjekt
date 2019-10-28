@@ -22,6 +22,11 @@ div.logo {
     float: left;
 }
 
+div.nav_bar {
+    float: right;
+    margin: 0 20px 0 0;
+}
+
 ul {
     margin: 0;
     padding: 0;
