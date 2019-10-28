@@ -1,10 +1,13 @@
+@font-face {
+   font-family: "Keep-Calm";
+   src: local("KeepCalm-Medium.ttf") format("truetype"),
+        url("../fonts/KeepCalm-Medium.ttf") format("truetype");
+}
+
 body {
-   font-family: 'Keep-Calm', 'Arial Bold';
-   color: black;
    background-color: lightgrey;
-   margin: auto;
-   padding: 50px;
-   width: 70%;
+   margin: 0;
+   padding: 0;
 }
 
 @media only screen and (max-width: 960px) {
@@ -20,6 +23,14 @@ p, label {
 
 h1,h2,h3,h4,h5 {
    text-align: center;
+   font-family: 'Keep-Calm', 'Arial Bold';
+   color: black;
+}
+
+selector {
+   margin: auto;
+   padding: 50px;
+   width: 70%;
 }
 
 .hvit_boks {
@@ -81,4 +92,56 @@ a {
 .kolonne:hover .reveal_text {
    opacity: 1;
    transition: 0.25s;
+}
+
+/* BRUKES I INDEX */
+#index_background {
+   width: 100%;
+}
+
+#index_foreground {
+   width: 70%;
+   margin: auto;
+   padding: 20px 0 20px 0;
+   background-color: green;
+   z-index: 2;
+}
+
+#news {
+   width: 70%;
+   margin: auto;
+}
+
+#news_header {
+   width: 100%;
+   text-align: center;
+   padding: 20px 0 20px 0;
+   margin: 20px 0 20px 0;
+   background-color: white;
+}
+
+.margin_box {
+   width: 100%;
+   padding: 20px 0 20px 0;
+   background-color: white;
+}
+
+.news_pic_wrapper {
+   width: 50%;
+   float: left;
+}
+
+.news_text_wrapper {
+   width: 50%;
+   float: right;
+}
+
+.news_pic {
+   width: 90%;
+   margin: auto;
+}
+
+.news_text {
+   width: 90%;
+   margin: auto;
 }
