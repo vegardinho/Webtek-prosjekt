@@ -3,49 +3,56 @@ const mat = [
         navn: "Lasagne",
         pris: 119,
         inneholder: "Ost, pasta, kjøttdeig, tomatsaus, basilikum",
-        allergener: ["laktose"]
+        allergener: ["laktose"],
+        ekstra: ['mild']
     },
 
     {
         navn: "Vegetar burger",
         pris: 105,
         inneholder: "Salat, tomat, løk, basilikum",
-        allergener: ["laktose", "gluten"]
+        allergener: ["laktose", "gluten"],
+        ekstra: ['vegetar', 'mild']
     },
 
     {
         navn: "Chilli con Carne",
         pris: 89,
         inneholder: "Chilli, kjøttdeig, løk, bønner",
-        allergener: []
+        allergener: [],
+        ekstra: ['sterk']
     },
 
     {
         navn: "Spaghetti Bolognese",
         pris: 89,
         inneholder: "Kjøttdeig, tomatsaus, løk, pasta, oregano",
-        allergener: ["gluten"]
+        allergener: ["gluten"],
+        ekstra: ['mild']
     },
 
     {
         navn: "Spaghetti carbonara",
         pris: 99,
         inneholder: "Fløtesaus, bacon",
-        allergener: ["laktose"]
+        allergener: ["laktose"],
+        ekstra: ['mild']
     },
 
     {
         navn: "Grønn curry",
         pris: 79,
-        inneholder: "Ris, paprika, blomkål, gullrot, bambus",
-        allergener: ["gluten"]
+        inneholder: "Ris, kylling, paprika, blomkål, gullrot, bambus",
+        allergener: ["gluten"],
+        ekstra: ['sterk']
     },
 
     {
         navn: "Pizza salami",
         pris: 120,
         inneholder: "Tomatsaus, ost, oregano, salami",
-        allergener: ["laktose", "gluten"]
+        allergener: ["laktose", "gluten"],
+        ekstra: ['mild']
     }
 ]
 

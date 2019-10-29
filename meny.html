@@ -16,10 +16,20 @@
 
             #content
             {
+                z-index: -1;
                 display: block;
                 height: 100vh;
                 width: 75vw;
                 margin: 0 auto;
+                margin-top: 78px;
+                background: rgb(241, 241, 241);
+            }
+            @media screen and (max-width: 874px) 
+            {
+                #content
+                {
+                    margin-top: 155px;
+                }
             }
         
             #meny
@@ -27,7 +37,7 @@
                 position: relative;
                 height: 100%;
                 width: calc(50% - 2px);
-                background: red;
+                /* background: red; */
                 float: left;
                 border-right: 2px solid gray;
             }
@@ -37,7 +47,7 @@
                 position: relative;
                 height: 100%;
                 width: calc(50% - 2px);
-                background: blue;
+                /* background: blue; */
                 float: left;
                 border-left: 2px solid gray;
             }
@@ -46,7 +56,7 @@
             {
                 width: 100%;
                 height: 15%;
-                background: orange;
+                /* background: orange; */
                 /* border-bottom: 2px solid gray; */
             }
 
@@ -62,7 +72,7 @@
             {
                 width: 100%;
                 height: 15%;
-                background: green;
+                /* background: green; */
                 border-bottom: 2px solid gray;
             }
 
@@ -72,7 +82,7 @@
             {
                 width: 100%;
                 height: 30%;
-                background: purple;
+                /* background: purple; */
                 border-bottom: 2px solid gray;
             }
 
@@ -80,21 +90,33 @@
             {
                 width: 100%;
                 height: 70%;
-                background: gold;
+                /* background: gold; */
+                overflow: hidden;
+            }
+
+            #takeaway_handlekurv:hover
+            {
+                overflow-y: scroll;
             }
 
             #matretter
             {
                 width: 100%;
                 height: 70%;
-                background: lightblue;
+                /* background: lightblue; */
+                overflow: hidden;
+            }
+
+            #matretter:hover
+            {
+                overflow-y: scroll;
             }
 
             .matretter
             {
                 height: calc(20vh - 4px);
                 width: 100%;
-                background: rgb(77, 185, 77);
+                /* background: rgb(77, 185, 77); */
                 border-top: 2px solid gray;
                 border-bottom: 2px solid gray;
                 font-size: 2em;
@@ -128,6 +150,14 @@
             {
                 width: 10%;
                 height: 20%;
+            }
+
+            #takeaway_title > h2
+            {
+                margin: 0;
+                padding-top: 5vw;
+                padding-left: 10vw;
+                font-size: 2em;
             }
 
         </style>
@@ -189,7 +219,7 @@
             <div id="takeaway">
 
                 <div id="takeaway_title">
-                    
+                    <h2>Din handlekurv</h2>
                 </div>
 
                 <div id="takeaway_handlekurv">

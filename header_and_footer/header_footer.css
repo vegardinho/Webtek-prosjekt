@@ -13,6 +13,7 @@ div#header {
     display: inline-block;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 div.logo {
@@ -38,7 +39,7 @@ li a {
     padding: 20px 40px 20px 40px;
     background-color: white;
     text-decoration: none;
-    color: coral;
+    color: #ff7f50;
 }
 
 li a:hover {
