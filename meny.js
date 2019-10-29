@@ -68,11 +68,12 @@ function setup_meny()
             <span class="mat_tittel">`+mat[item].navn+`</span>
             &nbsp&nbsp
             <span class="mat_pris">`+mat[item].pris+`kr</span>
-            <button id="`+mat[item].navn+`_button" class="order_button" onclick="add(this.id)">Legg til</button>
+            <img src="img/add_button.png" id="`+mat[item].navn+`_button" class="order_button" onclick="add(this.id)">
             <br>
             <span class='inneholder'>`+mat[item].inneholder+`</span>
         </div>`
     }
+    // <button id="`+mat[item].navn+`_button" class="order_button" onclick="add(this.id)">Legg til</button>
 
     // Hver allergi blir tildelt en liste med retter som inneholder den
     allergy_foods = {
@@ -88,6 +89,17 @@ function setup_meny()
         })
     })
 
+    preference_foods = {
+        'sterk':[],
+        'mild':[],
+        'vegetar':[]
+    }
+
+    mat.forEach(food => {
+        food.ekstra.forEach(pf => {
+            preference_foods[pf].push(food.navn)
+        })
+    })
 
     let handlekurv = localStorage.getItem('handlekurv').split(",")
     console.log(handlekurv)
@@ -106,18 +118,47 @@ function setup_meny()
 
 // Diplay: none alle retter som ikke er ønsket basert på checkboxes
 function sort_allergies()
+
 {
 
-    // Resetter alle rettene til å være synlig
-    var retter = document.getElementsByClassName("matretter")
-    for (var i = 0; i < retter.length; i++)
+    let data = document.querySelectorAll(".preference:checked")
+
+    if (data.length == 0)
     {
-        document.getElementById(retter[i].id).style.display = 'block'
+        // Resetter alle rettene til å være synlig
+        var retter = document.getElementsByClassName("matretter")
+        for (var i = 0; i < retter.length; i++)
+        {
+            document.getElementById(retter[i].id).style.display = 'block'
+        }
     }
+    else
+    {
+        // Resetter alle rettene til å være usynlig
+        var retter = document.getElementsByClassName("matretter")
+        for (var i = 0; i < retter.length; i++)
+        {
+            document.getElementById(retter[i].id).style.display = 'none'
+        }
+    }
+
+    // console.log("data length: "+data.length)
     
+    let preferences = []
+    data.forEach(element => {
+        preferences.push(element.id)
+    })
+
+    // console.log(preferences)
+    
+    preferences.forEach(element => {
+        preference_foods[element].forEach(show_food => {
+            document.getElementById(show_food).style.display = "block"
+        })
+    })
 
     // Henter ut alle allergen-boxer som er checked
-    let data = document.querySelectorAll(".allergy:checked")
+    data = document.querySelectorAll(".allergy:checked")
 
     // Itererer over raw data, henter ut ids, og lagrer dem i en array
     let allergies = []
@@ -132,8 +173,6 @@ function sort_allergies()
             document.getElementById(hide_food).style.display = 'none'
         })
     })
-    
-
 
 }
 
@@ -230,9 +269,18 @@ function add(id)
     updateHandlekurv()
 }
 
+function addButtonFunctionality()
+{
+    for (var x = 0; x < mat.length; x++)
+    {
+        document.getElementById(mat[x].navn+"_button").addEventListener('click', function(){add(this.id)})
+    }
+}
+
 function main()
 {
     setup_meny()
+    addButtonFunctionality()
 }
 
 main()

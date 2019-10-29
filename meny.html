@@ -140,10 +140,15 @@
             .order_button
             {
                 position: relative;
-                height: 30%;
-                width: 25%;
+                /* height: 30%; */
+                /* width: 25%; */
                 font-size: 0.6em;
-                margin-left: 5%
+                margin-left: 2.5vw
+            }
+
+            img.order_button
+            {
+                height: 2.8vh;
             }
 
             .order_antall
@@ -193,17 +198,17 @@
 
                     <label for="vegetar">
                         Vegetar
-                        <input type="checkbox" name="vegetar" id="vegetar">
+                        <input type="checkbox" name="vegetar" id="vegetar" class="preference" onclick="sort_allergies()">
                     </label>
 
                     <label for="sterk">
                         Sterk
-                        <input type="checkbox" name="styrke" id="sterk">
+                        <input type="checkbox" name="styrke" id="sterk" class="preference" onclick="sort_allergies()">
                     </label>
 
                     <label for="mild">
                         Mild
-                        <input type="checkbox" name="styrke" id="mild">
+                        <input type="checkbox" name="styrke" id="mild" class="preference" onclick="sort_allergies()">
                     </label>
 
                 </div>
