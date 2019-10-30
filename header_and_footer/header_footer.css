@@ -11,7 +11,7 @@ div#header {
     background-color: white;
     box-shadow: 1px 1px 10px black ;
     display: inline-block;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
 }
