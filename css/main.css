@@ -49,6 +49,7 @@ a {
 .fullbredde {
    width: 100%;
    height: auto;
+   transition: 0.25s;
 }
 
 .kolonne {
@@ -65,20 +66,19 @@ a {
    transition: 0.25s;
 }
 
-.fullbredde {
-   transition: 0.25s;
-}
-
 .reveal_text {
+   pointer-events: none;
+   text-align: center;
+   padding: 10%;
    position: absolute;
+   vertical-align: center;
    top: 0;
    left: 0;
    opacity: 0;
-   display: inline-block;
-   vertical-align: middle;
 }
 
-.kolonne:hover .reveal_text {
+.fullbredde:hover + .reveal_text {
    opacity: 1;
    transition: 0.25s;
 }
+
