@@ -1,0 +1,170 @@
+body
+{
+    margin: 0px;
+    background: lightgray;
+}
+
+#content
+{
+    z-index: -1;
+    display: block;
+    height: 100vh;
+    width: 75vw;
+    margin: 0 auto;
+    /* margin-top: 78px; */
+    background: rgb(241, 241, 241);
+    overflow: hidden;
+}
+@media screen and (max-width: 874px) 
+{
+    #content
+    {
+        /* margin-top: 155px; */
+        width: 100%
+    }
+
+    .matretter > span
+    {
+        font-size: 0.5em;
+    }
+
+    #takeaway_handlekurv
+    {
+        height: 55%;
+    }
+
+}
+
+#meny
+{
+    position: relative;
+    height: 100%;
+    width: calc(50% - 2px);
+    /* background: red; */
+    float: left;
+    border-right: 2px solid gray;
+}
+
+#takeaway
+{
+    position: relative;
+    height: 100%;
+    width: calc(50% - 2px);
+    /* background: blue; */
+    float: left;
+    border-left: 2px solid gray;
+}
+
+#allergener
+{
+    width: 100%;
+    height: 15%;
+    /* background: orange; */
+    /* border-bottom: 2px solid gray; */
+}
+
+#allergener > *, #onsker > *
+{
+    margin: 0;
+    font-size: 1.5em;
+    padding-left: 8%;
+    padding-top: 5%;
+}
+
+#onsker
+{
+    width: 100%;
+    height: 15%;
+    /* background: green; */
+    border-bottom: 2px solid gray;
+}
+
+
+
+#takeaway_title
+{
+    width: 100%;
+    height: 30%;
+    /* background: purple; */
+    border-bottom: 2px solid gray;
+}
+
+#takeaway_handlekurv
+{
+    width: 100%;
+    height: 48%;
+    background: rgb(180, 180, 180);
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+
+#takeaway_handlekurv:hover
+{
+    overflow-y: scroll;
+}
+
+#matretter
+{
+    width: 100%;
+    height: 70%;
+    /* background: lightblue; */
+    overflow: hidden;
+}
+
+#matretter:hover
+{
+    overflow-y: scroll;
+}
+
+.matretter
+{
+    height: calc(12vh - 4px);
+    width: 100%;
+    /* background: rgb(77, 185, 77); */
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    font-size: 1.8em;
+}
+
+.inneholder
+{
+    font-size: 0.8em;
+}
+
+/* .matretter > .mat_tittel,.matretter > .inneholder
+{
+    margin-left: 5%;
+} */
+
+/* .matretter > *
+{
+    margin-top: 5%;
+} */
+
+.order_button
+{
+    position: relative;
+    /* height: 30%; */
+    /* width: 25%; */
+    font-size: 0.6em;
+    margin-left: 2.5vw
+}
+
+img.order_button
+{
+    height: 2.8vh;
+}
+
+.order_antall
+{
+    width: 2vw;
+    height: 20%;
+}
+
+#takeaway_title > h2
+{
+    margin: 0;
+    padding-top: 5vw;
+    padding-left: 10vw;
+    font-size: 2em;
+}
