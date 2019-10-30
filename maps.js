@@ -1,3 +1,5 @@
+let wrapperSelector = "#wrapper"
+
 function hentKart() {
     var koordinater = {lat:63.422563, lng: 10.394979}
 

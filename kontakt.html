@@ -10,37 +10,38 @@
     </head>
 
     <body>
-        <div id="sporreskjema">
-            <h1>Kontakt oss</h1>
-                <form id="form" onsubmit="send_form()"> <!-- action, method, id? -adassada-->
-                    <label>Navn 
-                        <input class="kontaktInput" type="name" placeholder="Ditt navn" id="navn" autofocus>
-                    </label>
-                    <label>E-post * 
-                        <!-- Krever at email skrives inn -->
-                        <input class="kontaktInput" required type="email" placeholder="E-mail (påkrevd)" id="mail"  >
-                    </label>
-                    <label>Mobilnummer
-                        <input class="kontaktInput" type="tel" placeholder="Mobilnummer" id="mobil" >
-                    </label>
-                    <label>Tilbakemelding
-                        <!-- Krever at teksten er minimum er 10 tegn -->
-                        <textarea required minlength="10" rows="10"  id="tilbakemelding" placeholder="Denne teksten må ha minimum 10 tegn"></textarea> 
-                    </label>
+        <div id="wrapper">
+            <div id="sporreskjema">
+                <h1>Kontakt oss</h1>
+                    <form id="form" onsubmit="send_form()"> <!-- action, method, id? -adassada-->
+                        <label>Navn 
+                            <input class="kontaktInput" type="name" placeholder="Ditt navn" id="navn" autofocus>
+                        </label>
+                        <label>E-post * 
+                            <!-- Krever at email skrives inn -->
+                            <input class="kontaktInput" required type="email" placeholder="E-mail (påkrevd)" id="mail"  >
+                        </label>
+                        <label>Mobilnummer
+                            <input class="kontaktInput" type="tel" placeholder="Mobilnummer" id="mobil" >
+                        </label>
+                        <label>Tilbakemelding
+                            <!-- Krever at teksten er minimum er 10 tegn -->
+                            <textarea required minlength="10" rows="10"  id="tilbakemelding" placeholder="Denne teksten må ha minimum 10 tegn"></textarea> 
+                        </label>
 
-                    <p>Send til:</p>
-                    <label class="mottaker_kontakt">Restauranteier
-                        <input class="kontaktInput" required type="radio" name="mottaker" value="restauranteier" >
-                    </label>
-                    <label class="mottaker_kontakt">Webmaster
-                        <input class="kontaktInput" required type="radio" name="mottaker" value="webmaster">
-                    </label>
+                        <p>Send til:</p>
+                        <label class="mottaker_kontakt">Restauranteier
+                            <input class="kontaktInput" required type="radio" name="mottaker" value="restauranteier" >
+                        </label>
+                        <label class="mottaker_kontakt">Webmaster
+                            <input class="kontaktInput" required type="radio" name="mottaker" value="webmaster">
+                        </label>
 
-                    <input class="kontaktInput" type="submit" id="send">
-                </form>
-
+                        <input class="kontaktInput" type="submit" id="send">
+                    </form>
+            </div>
+            <div id="kart_boks"></div>
         </div>
-        <div id="kart_boks"></div>
         <script src="header_and_footer/header.js"></script>
         <script src="maps.js"></script>
         <script async defer
