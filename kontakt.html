@@ -14,14 +14,14 @@
             <h1>Kontakt oss</h1>
                 <form id="form" onsubmit="send_form()"> <!-- action, method, id? -adassada-->
                     <label>Navn 
-                        <input type="name" placeholder="Ditt navn" id="navn" autofocus>
+                        <input class="kontaktInput" type="name" placeholder="Ditt navn" id="navn" autofocus>
                     </label>
                     <label>E-post * 
                         <!-- Krever at email skrives inn -->
-                        <input required type="email" placeholder="E-mail (påkrevd)" id="mail"  >
+                        <input class="kontaktInput" required type="email" placeholder="E-mail (påkrevd)" id="mail"  >
                     </label>
                     <label>Mobilnummer
-                        <input type="tel" placeholder="Mobilnummer" id="mobil" >
+                        <input class="kontaktInput" type="tel" placeholder="Mobilnummer" id="mobil" >
                     </label>
                     <label>Tilbakemelding
                         <!-- Krever at teksten er minimum er 10 tegn -->
@@ -30,18 +30,18 @@
 
                     <p>Send til:</p>
                     <label class="mottaker_kontakt">Restauranteier
-                        <input required type="radio" name="mottaker" value="restauranteier" >
+                        <input class="kontaktInput" required type="radio" name="mottaker" value="restauranteier" >
                     </label>
                     <label class="mottaker_kontakt">Webmaster
-                        <input required type="radio" name="mottaker" value="webmaster">
+                        <input class="kontaktInput" required type="radio" name="mottaker" value="webmaster">
                     </label>
 
-                    <input type="submit" id="send">
+                    <input class="kontaktInput" type="submit" id="send">
                 </form>
 
         </div>
         <div id="kart_boks"></div>
-
+        <script src="header_and_footer/header.js"></script>
         <script src="maps.js"></script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV2Nyq4wq-we8qwZvF2JkEwF4nO1iq2Bk&callback=hentKart">

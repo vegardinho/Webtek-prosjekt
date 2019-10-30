@@ -23,7 +23,7 @@ function send_form() {
     let tekst = document.getElementById("tilbakemelding").value
     let sporreskjema = document.getElementById("sporreskjema")
 
-    sporreskjema.outerHTML = "Takk for tilbakemeldingen "
+    sporreskjema.innerHTML = "Takk for tilbakemeldingen, " + navn + "<br>" + "Du vil bli kontaktet på " + epost
 
 
     // alert("Takk for tilbakemeldingen", navn)
