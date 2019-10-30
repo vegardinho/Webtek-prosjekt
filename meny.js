@@ -68,7 +68,7 @@ function setup_meny()
             <span class="mat_tittel">`+mat[item].navn+`</span>
             &nbsp&nbsp
             <span class="mat_pris">`+mat[item].pris+`kr</span>
-            <img src="img/add_button.png" id="`+mat[item].navn+`_button" class="order_button" onclick="add(this.id)">
+            <img src="img/add_button.png" id="`+mat[item].navn+`_button" class="order_button">
             <br>
             <span class='inneholder'>`+mat[item].inneholder+`</span>
         </div>`
@@ -221,6 +221,7 @@ function updateHandlekurv()
 // Legger til den ønskede retten i handlekurven
 function add(id)
 {
+    console.log("adding " + id)
 
     if (document.getElementById(id.split("_")[0]+"_takeaway") == null)
     {
