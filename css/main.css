@@ -120,12 +120,14 @@ section#news {
    margin: 20px 0 20px 0;
    background-color: white;
    font-family: "Keep-Calm";
+   font-size: 2em;
 }
 
 .margin_box {
    width: 100%;
    padding: 20px 0 20px 0;
    background-color: white;
+   overflow: auto;
 }
 
 .news_pic_wrapper {
@@ -143,7 +145,16 @@ section#news {
    margin: auto;
 }
 
+.news_pic img {
+   width: 100%;
+   display: block;
+}
+
 .news_text {
    width: 90%;
    margin: auto;
+}
+
+.news_text h3 {
+   text-align: left;
 }
