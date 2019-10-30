@@ -186,13 +186,25 @@ function updateHandlekurv()
 {
     // Check if you need to remove anything
     let raw_input_data = document.getElementsByClassName('order_antall')
+    let subtotal = 0
     for (element of raw_input_data)
     {
         if (document.getElementById(element.id).value == 0)
         {
             document.getElementById(element.id.split("_")[1]+"_takeaway").remove()
         }
+        else
+        {
+            mat.forEach(rett => {
+                if (rett.navn == element.id.split("_")[1])
+                {
+                    subtotal += rett.pris * document.getElementById(element.id).value
+                }
+            })
+        }
     }
+    document.getElementById("span_pris").innerHTML = subtotal
+
     let input_data = []
     for (data of raw_input_data)
     {
@@ -241,12 +253,10 @@ function add(id)
             <span class="mat_tittel">`+mat[item].navn+`</span>
             &nbsp&nbsp
             <span class="mat_pris">`+mat[item].pris+`kr</span>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <br>
             <span>Antall</span>
             <input type="number" min="0" value="1" class="order_antall" id="antall_`+mat[item].navn+`">
             <button class="remove_button" id="remove_`+mat[item].navn+`" onclick="remove(this.id)">Fjern alle</button>
-            <br>
-            <span class='inneholder'>`+mat[item].inneholder+`</span>
         </div>`  
 
         for (value of raw_input_data)
@@ -274,6 +284,22 @@ function addButtonFunctionality()
     for (var x = 0; x < mat.length; x++)
     {
         document.getElementById(mat[x].navn+"_button").addEventListener('click', function(){add(this.id)})
+    }
+}
+
+function completeOrder()
+{
+    let customer_name = prompt("Vennligst legg til telefonnummer eller navn")
+    if ((customer_name.search(/[^A-Za-z\s]/) == -1 && customer_name.length > 0) || (isNaN(customer_name) == false && customer_name.length == 8))
+    {
+        alert("Takk for din bestilling.\nMaten din er klar til henting om 10-15 minutter")
+        location.reload()
+    }
+    else
+    {
+        alert("Vennligst skriv inn navnet, eller telefonnummeret ditt (8 tall)")
+        localStorage.setItem('handlekurv', "")
+        completeOrder()
     }
 }
 
