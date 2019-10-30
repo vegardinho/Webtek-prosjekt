@@ -1,4 +1,4 @@
-input {
+.kontaktInput {
     display: block;
     margin: auto;
     padding: 5px;
@@ -11,6 +11,7 @@ input {
 #sporreskjema {
     margin: auto;
     text-align: center;
+    height: 600px;
 }
 
 #send {
