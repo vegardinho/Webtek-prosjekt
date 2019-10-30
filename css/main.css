@@ -176,6 +176,11 @@ section#news {
    height: 600px;
 }
 
+#bekreftelse {
+   font-size: 30px;
+   margin-top: 50px;
+}
+
 #send {
    background-color: lightblue;
    width: 50%;
@@ -190,7 +195,8 @@ section#news {
 }
 
 #kart_boks {
-   width: 100%;
+   margin: auto;
+   width: 70%;
    height: 400px;
 }
 
