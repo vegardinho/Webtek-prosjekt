@@ -9,13 +9,6 @@ body {
    padding: 0;
 }
 
-@media only screen and (max-width: 960px) {
-   body {
-      width: 90%;
-      padding: 0;
-   }
-}
-
 p, label {
    font-family: 'Roboto Slab', 'Georgia';
 }
@@ -24,12 +17,6 @@ h1,h2,h3,h4,h5 {
    text-align: center;
    font-family: 'Keep-Calm', 'Arial Bold';
    color: black;
-}
-
-selector {
-   margin: auto;
-   padding: 50px;
-   width: 70%;
 }
 
 .hvit_boks {
@@ -51,6 +38,12 @@ a {
 
 
 /* BRUKES I OM_OSS */
+.oss {
+   margin: auto;
+   padding: 50px;
+   width: 70%;
+}
+
 .bilde {
    width: 30%;
    height: auto;
@@ -81,8 +74,7 @@ a {
    text-align: center;
    padding: 10%;
    position: absolute;
-   vertical-align: center;
-   top: 0;
+   top: 33%;
    left: 0;
    opacity: 0;
 }
@@ -92,6 +84,32 @@ a {
    transition: 0.25s;
 }
 
+@media only screen and (max-width: 960px) {
+   .oss {
+      width: 90%;
+      padding: 0;
+   }
+
+   .kolonne {
+      width: 100%;
+   }
+   
+   .fullbredde:hover {
+      transform: 0;
+      opacity: 1;
+   }
+
+   .visTekst .reveal_text {
+      opacity: 1;
+      transition: 0.5s;
+   }
+
+   .visTekst .fullbredde {
+      transform: scale(1.03);
+      opacity: 0.25;
+      transition: 0.5s;
+   }
+}
 
 /* BRUKES I INDEX */
 #index_background {
