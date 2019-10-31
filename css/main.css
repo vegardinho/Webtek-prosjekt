@@ -194,10 +194,23 @@ section#news {
    resize: none;
 }
 
-#kart_boks {
+#kartOgTekst {
    margin: auto;
-   width: 70%;
-   height: 400px;
+   width: 50%;
+}
+
+#kart_boks {
+   width: 25vw;
+   height: 25vw;
+   margin-bottom: 10px;
+   border: solid 2px grey;
+   float: left;
+   margin-right: 1vw;
+}
+
+#kontaktTekst {
+   float: left;
+   width: 20vw;
 }
 
 .mottaker_kontakt {
