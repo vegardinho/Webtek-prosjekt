@@ -294,12 +294,12 @@ function completeOrder()
     if ((customer_name.search(/[^A-Za-z\s]/) == -1 && customer_name.length > 0) || (isNaN(customer_name) == false && customer_name.length == 8))
     {
         alert("Takk for din bestilling.\nMaten din er klar til henting om 10-15 minutter")
+        localStorage.setItem('handlekurv', "")
         location.reload()
     }
     else
     {
         alert("Vennligst skriv inn navnet, eller telefonnummeret ditt (8 tall)")
-        localStorage.setItem('handlekurv', "")
         completeOrder()
     }
 }
@@ -311,5 +311,3 @@ function main()
 }
 
 main()
-
-let wrapperSelector = "#content"
