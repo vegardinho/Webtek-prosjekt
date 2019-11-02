@@ -1,22 +1,22 @@
 document.body.innerHTML =
 `<header>
 
-    <div id="header">
+<div id="header">
 
-        <div class="logo">
-            <img src="/img/logo_fin.svg" alt="Logo Samspiseriet">
-        </div>
-
-        <div class="nav_bar">
-            <ul>
-                <li class="nav_element"><a href="">Hjem</a></li>
-                <li class="nav_element"><a href="">Meny</a></li>
-                <li class="nav_element"><a href="">Om oss</a></li>
-                <li class="nav_element"><a href="">Kontakt</a></li>
-            </ul>
-        </div>
-
+    <div class="logo">
+        <img src="/img/logo_fin.svg" alt="Logo Samspiseriet">
     </div>
+
+    <div class="nav_bar">
+        <ul id="nav">
+            <li class="nav_element"><a href="">Hjem</a></li>
+            <li class="nav_element"><a href="">Meny</a></li>
+            <li class="nav_element"><a href="">Om oss</a></li>
+            <li class="nav_element"><a href="">Kontakt</a></li>
+        </ul>
+    </div>
+
+</div>
 
 </header>` +document.body.innerHTML
 
@@ -42,3 +42,5 @@ if (document.contains(index)) {
 } else if (document.contains(kontakt)) {
     active(3)
 }
+
+document.querySelector(wrapperSelector).style.marginTop = document.getElementById("header").clientHeight + "px"
