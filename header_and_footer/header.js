@@ -4,7 +4,7 @@ document.body.innerHTML =
     <div id="header">
 
         <div class="logo">
-            <img src="" alt="Logo Samspiseriet">
+            <img src="/img/logo_fin.svg" alt="Logo Samspiseriet">
         </div>
 
         <div class="nav_bar">

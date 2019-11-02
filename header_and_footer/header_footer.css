@@ -11,16 +11,16 @@ div#header {
     background-color: white;
     box-shadow: 1px 1px 10px black ;
     display: inline-block;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
 }
 
-div.logo {
-    width: 20%;
-    padding: 0 10px;
-    background-color: green;
+div#logo {
+    padding: 5px 10px 0 10px;
     float: left;
+    width: 140px;
+    height: auto;
 }
 
 ul#nav {
@@ -36,15 +36,32 @@ li.nav_element {
 
 li a {
     display:block;
-    padding: 20px 40px 20px 40px;
+    padding: 10px 30px 10px 30px;
     background-color: white;
     text-decoration: none;
     color: #ff7f50;
+    text-align: center;
 }
 
 li a:hover {
     background-color: #eaeaea;
     color: #b35300;
+}
+
+
+@media (max-width: 760px) {
+    div#logo {
+        float: none;
+    }
+
+    li.nav_element {
+        float: none;
+    }
+
+    div#header {
+        position: initial;
+    }
+
 }
 
 /* Footer */
