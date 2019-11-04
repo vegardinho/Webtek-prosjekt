@@ -161,7 +161,7 @@ img.order_button
     height: 20%;
 }
 
-#takeaway_title > h2
+#takeaway_title > p
 {
     margin: 0;
     padding-top: 5vw;

@@ -18,8 +18,7 @@ document.body.innerHTML =
 
 </div>
 
-</header>` +document.body.innerHTML
-
+</header>` + document.body.innerHTML
 
 const nav = document.querySelectorAll('li.nav_element a')
 
@@ -33,15 +32,41 @@ const meny = document.getElementById('meny_js')
 const kontakt = document.getElementById('kontakt_js')
 const om_oss = document.getElementById('om_oss_js')
 
+let link = ""
+
 if (document.contains(index)) {
     active(0)
+    link = "index.html"
 } else if (document.contains(meny)) {
     active(1)
+    link = "meny.html"
 } else if (document.contains(om_oss)) {
     active(2)
+    link = "om_oss.html"
 } else if (document.contains(kontakt)) {
     active(3)
+    link = "kontakt.html"
 }
+
+document.body.innerHTML +=
+`<footer>
+<div id="laget_av">
+    <p>Lagd av: Joon, Lucas, Magnus, Vegard</p>
+</div>
+
+<div id="epost_nr_adresse">
+    <p>samspiseriet@gmail.com</p>
+</div>
+
+<div id="telefonnummer">
+    <p>666-69-420</p>
+</div>
+
+<div id="copyright">
+    <p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fvegardinho.github.io%2F`+link+`">Samspiseriet© 2019</a></p>
+</div>
+</footer>`
+
 
 document.querySelector(wrapperSelector).style.marginTop = document.getElementById("header").clientHeight + "px"
 
