@@ -4,7 +4,7 @@ document.body.innerHTML =
 <div id="header">
 
     <div id="logo">
-        <img src="" alt="Logo Samspiseriet">
+        <img src="img/Samspiseriet_logo.svg" alt="Logo Samspiseriet" id="logo_image">
     </div>
 
     <div id="nav_bar">
@@ -44,3 +44,6 @@ if (document.contains(index)) {
 }
 
 document.querySelector(wrapperSelector).style.marginTop = document.getElementById("header").clientHeight + "px"
+
+
+document.getElementById("logo_image").style.setProperty("height", '3.1em')
