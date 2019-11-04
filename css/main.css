@@ -408,3 +408,85 @@ img.order_button
     padding-left: 10vw;
     font-size: 2em;
 }
+
+/* Header */
+body {
+   margin: 0;
+   padding: 0;
+   background-color: lightgray;
+}
+
+div#header {
+   width:100%;
+   margin: 0;
+   padding: 0;
+   background-color: white;
+   box-shadow: 1px 1px 10px black ;
+   display: inline-block;
+   position: fixed;
+   top: 0;
+   z-index: 1;
+}
+
+div#logo {
+   padding: 5px 10px 0 10px;
+   float: left;
+   width: 140px;
+   height: auto;
+}
+
+ul#nav {
+   margin: 0;
+   padding: 0;
+}
+
+li.nav_element {
+   list-style-type: none;
+   font-size: 2em;
+   float: right;
+}
+
+li a {
+   display:block;
+   padding: 10px 30px 10px 30px;
+   background-color: white;
+   text-decoration: none;
+   color: #ff7f50;
+   text-align: center;
+}
+
+li a:hover {
+   background-color: #eaeaea;
+   color: #b35300;
+}
+
+
+@media (max-width: 760px) {
+   div#logo {
+       float: none;
+   }
+
+   li.nav_element {
+       float: none;
+   }
+
+   div#header {
+       position: initial;
+   }
+
+}
+
+/* Footer */
+footer {
+   width: 100%;
+   padding: 50px 0 50px 0;
+   background-color: #242424;
+}
+
+/* Main */
+main div.content {
+   height: 1500px;
+   max-width: 60%;
+   margin: auto;
+   background-color: white;
+}
