@@ -7,8 +7,8 @@ function inViewport(element) {
    var pos = element.getBoundingClientRect();
    var vinduhoyde = window.innerHeight;
 
-   // Returnerer true hvis hele kolonneelementet får plass i viewport
    var minGap = vinduhoyde - kolHeight;
+   // Returnerer true hvis hele kolonneelementet får plass i viewport
    return (pos.top < minGap && pos.top > 0);
 }
 
