@@ -456,7 +456,7 @@ li.nav_element {
    float: right;
 }
 
-li a {
+li.nav_element a {
    display:block;
    padding: 10px 20px 10px 20px;
    background-color: white;
@@ -465,7 +465,7 @@ li a {
    text-align: center;
 }
 
-li a:hover {
+li.nav_element a:hover {
    background-color: #eaeaea;
    color: #b35300;
 }
