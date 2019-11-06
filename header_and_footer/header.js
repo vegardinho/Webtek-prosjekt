@@ -67,8 +67,13 @@ document.body.innerHTML +=
 </div>
 </footer>`
 
+if (window.innerWidth <= 760) {
+   document.querySelector(wrapperSelector).style.marginTop = document.getElementById("header").clientHeight/4.4 + "px";
+} else {
+   document.querySelector(wrapperSelector).style.marginTop = document.getElementById("header").clientHeight + "px";
+}
 
-document.querySelector(wrapperSelector).style.marginTop = document.getElementById("header").clientHeight + "px"
+document.querySelector(wrapperSelector).style.marginTop = document.getElementById("header").clientHeight + "px";
 
 
-document.getElementById("logo_image").style.setProperty("height", '3.1em')
+// document.getElementById("logo_image").style.setProperty("height", '3.1em');
