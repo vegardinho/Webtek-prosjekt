@@ -1,5 +1,4 @@
 let order = ""
-let wrapperSelector = "#content"
 // Populate menyen dynamisk med alle rettene vi har
 function setup_meny()
 {
