@@ -4,15 +4,15 @@ document.body.innerHTML =
 <div id="header">
 
     <div id="logo">
-        <img src="img/Samspiseriet_logo.svg" alt="Logo Samspiseriet" id="logo_image">
+        <img src="/img/Logo.svg" alt="Logo Samspiseriet">
     </div>
 
     <div id="nav_bar">
         <ul id="nav">
-            <li class="nav_element"><a href="index.html">Hjem</a></li>
-            <li class="nav_element"><a href="meny.html">Meny</a></li>
             <li class="nav_element"><a href="om_oss.html">Om oss</a></li>
             <li class="nav_element"><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav_element"><a href="meny.html">Meny</a></li>
+            <li class="nav_element"><a href="index.html">Hjem</a></li>
         </ul>
     </div>
 
