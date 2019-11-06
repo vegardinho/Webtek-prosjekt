@@ -133,7 +133,7 @@ function updateHandlekurv()
     // Check if you need to remove anything
     let raw_input_data = document.getElementsByClassName('order_antall')
     let subtotal = 0
-    for (element of raw_input_data)
+    for(element of raw_input_data)
     {
         if (document.getElementById(element.id).value == 0)
         {
