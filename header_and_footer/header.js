@@ -4,7 +4,7 @@ document.body.innerHTML =
 <div id="header">
 
     <div id="logo">
-        <img src="/img/Logo.svg" alt="Logo Samspiseriet">
+        <img src="img/Logo.svg" alt="Logo Samspiseriet">
     </div>
 
     <div id="nav_bar">
@@ -35,16 +35,16 @@ const om_oss = document.getElementById('om_oss_js')
 let link = ""
 
 if (document.contains(index)) {
-    active(0)
+    active(3)
     link = "index.html"
 } else if (document.contains(meny)) {
-    active(1)
+    active(2)
     link = "meny.html"
 } else if (document.contains(om_oss)) {
-    active(2)
+    active(0)
     link = "om_oss.html"
 } else if (document.contains(kontakt)) {
-    active(3)
+    active(1)
     link = "kontakt.html"
 }
 
