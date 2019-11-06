@@ -1,61 +1,3 @@
-const mat = [
-    {
-        navn: "Lasagne",
-        pris: 119,
-        inneholder: "Ost, pasta, kjøttdeig, tomatsaus, basilikum",
-        allergener: ["laktose"],
-        ekstra: ['mild']
-    },
-
-    {
-        navn: "Vegetar burger",
-        pris: 105,
-        inneholder: "Salat, tomat, løk, basilikum",
-        allergener: ["laktose", "gluten"],
-        ekstra: ['vegetar', 'mild']
-    },
-
-    {
-        navn: "Chilli con Carne",
-        pris: 89,
-        inneholder: "Chilli, kjøttdeig, løk, bønner",
-        allergener: [],
-        ekstra: ['sterk']
-    },
-
-    {
-        navn: "Spaghetti Bolognese",
-        pris: 89,
-        inneholder: "Kjøttdeig, tomatsaus, løk, pasta, oregano",
-        allergener: ["gluten"],
-        ekstra: ['mild']
-    },
-
-    {
-        navn: "Spaghetti carbonara",
-        pris: 99,
-        inneholder: "Fløtesaus, bacon",
-        allergener: ["laktose"],
-        ekstra: ['mild']
-    },
-
-    {
-        navn: "Grønn curry",
-        pris: 79,
-        inneholder: "Ris, kylling, paprika, blomkål, gullrot, bambus",
-        allergener: ["gluten"],
-        ekstra: ['sterk']
-    },
-
-    {
-        navn: "Pizza salami",
-        pris: 120,
-        inneholder: "Tomatsaus, ost, oregano, salami",
-        allergener: ["laktose", "gluten"],
-        ekstra: ['mild']
-    }
-]
-
 let order = ""
 
 // Populate menyen dynamisk med alle rettene vi har
@@ -294,12 +236,12 @@ function completeOrder()
     if ((customer_name.search(/[^A-Za-z\s]/) == -1 && customer_name.length > 0) || (isNaN(customer_name) == false && customer_name.length == 8))
     {
         alert("Takk for din bestilling.\nMaten din er klar til henting om 10-15 minutter")
+        localStorage.setItem('handlekurv', "")
         location.reload()
     }
     else
     {
         alert("Vennligst skriv inn navnet, eller telefonnummeret ditt (8 tall)")
-        localStorage.setItem('handlekurv', "")
         completeOrder()
     }
 }
@@ -311,5 +253,3 @@ function main()
 }
 
 main()
-
-let wrapperSelector = "#content"
