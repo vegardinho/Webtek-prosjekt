@@ -113,11 +113,20 @@ div.top_text {
    width: 70%;
    margin: auto;
    padding: 50px 20px 50px 20px;
-   background-color: rgba(255, 255, 255, 0.6);
+   background-color: rgba(255, 255, 255, 0.7);
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%)
+}
+
+div.top_text a {
+   color: #0093B3;
+   text-decoration: none;
+}
+
+div.top_text a:hover {
+   color: #00D2FF;
 }
 
 #news_header {
