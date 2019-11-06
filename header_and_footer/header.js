@@ -69,11 +69,10 @@ document.body.innerHTML +=
 
 if (window.innerWidth <= 760) {
    document.querySelector(wrapperSelector).style.marginTop = document.getElementById("header").clientHeight/4.4 + "px";
+} else if (document.contains(kontakt)) {
+   document.querySelector(wrapperSelector).style.marginTop = document.getElementById("header").clientHeight + 100 + "px";
 } else {
    document.querySelector(wrapperSelector).style.marginTop = document.getElementById("header").clientHeight + "px";
 }
-
-document.querySelector(wrapperSelector).style.marginTop = document.getElementById("header").clientHeight + "px";
-
 
 // document.getElementById("logo_image").style.setProperty("height", '3.1em');
