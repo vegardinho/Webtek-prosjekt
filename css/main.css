@@ -38,10 +38,10 @@ a {
 
 /* BRUKES I OM_OSS */
 .oss {
+   overflow: auto;
    margin: auto;
    padding: 50px;
    width: 70%;
-   overflow: auto;
 }
  .oss h1 {
     font-size: 3em;
