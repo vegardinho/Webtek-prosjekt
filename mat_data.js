@@ -1,6 +1,6 @@
 const mat = [
     {
-        navn: "Vårruller 3stk",
+        navn: "Vårruller 3 stk",
         pris: 29,
         inneholder: "Salat, gulrot, peanøtter",
         allergener: ['notter'],
@@ -8,7 +8,7 @@ const mat = [
     },
 
     {
-        navn: "Kyllingvinger 3stk",
+        navn: "Kyllingvinger 3 stk",
         pris: 49,
         inneholder: "Kyllingvinger, salatblader",
         allergener: [],
@@ -32,7 +32,7 @@ const mat = [
     },
 
     {
-        navn: "Cheese burger",
+        navn: "Cheeseburger",
         pris: 119,
         inneholder: "Kjøtt, tomat, løk, ost",
         allergener: ['laktose', 'gluten'],
@@ -40,7 +40,7 @@ const mat = [
     },
 
     {
-        navn: "Vegetar burger",
+        navn: "Vegetarburger",
         pris: 105,
         inneholder: "Salat, tomat, løk, basilikum",
         allergener: ["laktose", "gluten"],
@@ -64,7 +64,7 @@ const mat = [
     },
 
     {
-        navn: "Spaghetti carbonara",
+        navn: "Spaghetti Carbonara",
         pris: 99,
         inneholder: "Fløtesaus, bacon",
         allergener: ["laktose"],
@@ -80,7 +80,7 @@ const mat = [
     },
 
     {
-        navn: "Pizza salami",
+        navn: "Pizza Salami",
         pris: 119,
         inneholder: "Tomatsaus, ost, oregano, salami",
         allergener: ["laktose", "gluten"],
@@ -104,7 +104,7 @@ const mat = [
     },
     
     {
-        navn: "Thai curry suppe",
+        navn: "Thaisuppe Curry",
         pris: 89,
         inneholder: "Kylling, bambus, paprika, tomat",
         allergener: [],
