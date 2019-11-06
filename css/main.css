@@ -74,7 +74,6 @@ a {
 }
 
 .tekstboksgreie {
-   width: 100%;
    background: rgba(255,255,255,.8);
    padding-top: 5px;
    padding-bottom: 5px;
@@ -119,6 +118,12 @@ a {
 
    .kolonne {
       width: 100%;
+   }
+
+   .tekstboksgreie {
+      position: relative;
+      width: 100%;
+      margin-top: 5px;
    }
    
    .visTekst .reveal_text {
