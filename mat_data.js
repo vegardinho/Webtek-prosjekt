@@ -1,10 +1,34 @@
 const mat = [
     {
-        navn: "Lasagne",
-        pris: 119,
-        inneholder: "Ost, pasta, kjøttdeig, tomatsaus, basilikum",
-        allergener: ["laktose"],
+        navn: "Vårruller 3stk",
+        pris: 29,
+        inneholder: "Salat, gulrot, peanøtter",
+        allergener: ['nøtter'],
         ekstra: ['mild']
+    },
+
+    {
+        navn: "Kyllingvinger 3stk",
+        pris: 49,
+        inneholder: "Kyllingvinger, salatblader",
+        allergener: [],
+        ekstra: ['mild']
+    },
+
+    {
+        navn: "Ostepinner m/ kremostdip",
+        pris: 49,
+        inneholder: "Ost",
+        allergener: ['laktose'],
+        ekstra: ['mild']
+    },
+
+    {
+        navn: "Salat",
+        pris: 49,
+        inneholder: "Salat",
+        allergener: [],
+        ekstra: ['vegetar', 'mild']
     },
 
     {
@@ -48,11 +72,11 @@ const mat = [
     },
 
     {
-        navn: "Grønn curry",
-        pris: 79,
-        inneholder: "Ris, kylling, paprika, blomkål, gullrot, bambus",
-        allergener: ["gluten"],
-        ekstra: ['sterk']
+        navn: "Lasagne",
+        pris: 119,
+        inneholder: "Ost, pasta, kjøttdeig, tomatsaus, basilikum",
+        allergener: ["laktose"],
+        ekstra: ['mild']
     },
 
     {
@@ -64,11 +88,11 @@ const mat = [
     },
 
     {
-        navn: "Salat",
-        pris: 49,
-        inneholder: "Salat",
-        allergener: [],
-        ekstra: ['vegetar', 'mild']
+        navn: "Grønn curry",
+        pris: 79,
+        inneholder: "Ris, kylling, paprika, blomkål, gullrot, bambus",
+        allergener: ["gluten"],
+        ekstra: ['sterk']
     },
 
     {
@@ -85,30 +109,6 @@ const mat = [
         inneholder: "Kylling, bambus, paprika, tomat",
         allergener: [],
         ekstra: ['sterk']
-    },
-
-    {
-        navn: "Vårruller 3stk",
-        pris: 29,
-        inneholder: "Salat, gulrot, peanøtter",
-        allergener: ['nøtter'],
-        ekstra: ['mild']
-    },
-
-    {
-        navn: "Ostepinner m/ kremostdip",
-        pris: 49,
-        inneholder: "Ost",
-        allergener: ['laktose'],
-        ekstra: ['mild']
-    },
-
-    {
-        navn: "Kyllingvinger 3stk",
-        pris: 49,
-        inneholder: "Kyllingvinger, salatblader",
-        allergener: [],
-        ekstra: ['mild']
     },
 
     {
