@@ -21,7 +21,6 @@ h1,h2,h3,h4,h5 {
 
 .hvit_boks {
    width: 100%;
-   height: 100%;
    background: white;
    padding-top: 5px;
    padding-bottom: 5px;
@@ -42,7 +41,11 @@ a {
    margin: auto;
    padding: 50px;
    width: 70%;
+   overflow: auto;
 }
+ .oss h1 {
+    font-size: 3em;
+ }
 
 .bilde {
    width: 30%;
@@ -86,10 +89,18 @@ a {
    transition: 0.25s;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 800px) {
    .oss {
       width: 90%;
       padding: 0;
+   }
+
+   #epost_nr_adresse, #telefonnummer, #laget_av {
+      display: none;
+   }
+
+   #copyright {
+      width: 100%;
    }
 
    .kolonne {
@@ -278,12 +289,6 @@ footer > div > p > a
    text-decoration: none;
 }
 
-body
-{
-    margin: 0px;
-    background: lightgray;
-}
-
 #content
 {
     z-index: -1;
@@ -440,12 +445,6 @@ img.order_button
 }
 
 /* Header */
-body {
-   margin: 0;
-   padding: 0;
-   background-color: lightgray;
-}
-
 div#header {
    width:100%;
    margin: 0;
