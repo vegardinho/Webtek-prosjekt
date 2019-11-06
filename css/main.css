@@ -19,6 +19,10 @@ h1,h2,h3,h4,h5 {
    color: black;
 }
 
+h1 {
+    font-size: 3em;
+ }
+
 .hvit_boks {
    width: 100%;
    background: white;
@@ -44,10 +48,6 @@ a {
    padding: 50px;
    width: 70%;
 }
- .oss h1 {
-    font-size: 3em;
- }
-
 .bilde {
    width: 30%;
    height: auto;
@@ -71,6 +71,18 @@ a {
    transform: scale(1.03);
    opacity: 0.25;
    transition: 0.25s;
+}
+
+.tekstboksgreie {
+   width: 100%;
+   background: white;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   padding-left: 40px;
+   padding-right: 40px;
+   box-sizing: border-box;
 }
 
 /* pointer events forhindrer teksten i √• bli gjeldende ramme for hover */
