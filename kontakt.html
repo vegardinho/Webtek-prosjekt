@@ -12,7 +12,7 @@
 
     <body>
         <div id="sporreskjema">
-            <h1>Kontakt oss</h1>
+
                 <form id="form" onsubmit="send_form()"> <!-- action, method, id? -adassada-->
                     <label>Navn 
                         <input class="kontaktInput" type="name" placeholder="Ditt navn" id="navn" autofocus>
@@ -42,8 +42,10 @@
 
         </div>
         <div id="kart_boks"></div>
-        <script src="header_and_footer/header.js"></script>
+	<span id="kontakt_js"></span>
         <script src="maps.js"></script>
+	<script>let wrapperSelector = "#sporreskjema"</script>
+        <script src="header_and_footer/header.js"></script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV2Nyq4wq-we8qwZvF2JkEwF4nO1iq2Bk&callback=hentKart">
         </script>        

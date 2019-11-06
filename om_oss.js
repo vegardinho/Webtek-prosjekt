@@ -7,7 +7,7 @@ function inViewport(element) {
    var pos = element.getBoundingClientRect();
    var vinduhoyde = window.innerHeight;
 
-   var minGap = vinduhoyde - kolHeight - (vinduhoyde/10);
+   var minGap = vinduhoyde - kolHeight - (vinduhoyde/20);
    // Returnerer true hvis hele kolonneelementet f√•r plass i viewport
    return (pos.top < minGap && pos.top > 0);
 }

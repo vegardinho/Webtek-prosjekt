@@ -19,6 +19,10 @@ h1,h2,h3,h4,h5 {
    color: black;
 }
 
+h1 {
+    font-size: 3em;
+ }
+
 .hvit_boks {
    width: 100%;
    background: white;
@@ -44,10 +48,6 @@ a {
    padding: 50px;
    width: 70%;
 }
- .oss h1 {
-    font-size: 3em;
- }
-
 .bilde {
    width: 30%;
    height: auto;
@@ -73,7 +73,19 @@ a {
    transition: 0.25s;
 }
 
-/* pointer events forhindrer teksten i √• bli gjeldende ramme for hover */
+.tekstboksgreie {
+   background: rgba(255,255,255,.8);
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 40px;
+   padding-right: 40px;
+   box-sizing: border-box;
+   position: absolute;
+   width: 70%;
+   top: 50%;
+}
+
+/* pointer events forhindrer teksten i å bli gjeldende ramme for hover */
 .reveal_text {
    pointer-events: none;
    text-align: center;
@@ -106,6 +118,12 @@ a {
 
    .kolonne {
       width: 100%;
+   }
+
+   .tekstboksgreie {
+      position: relative;
+      width: 100%;
+      margin-top: 5px;
    }
    
    .visTekst .reveal_text {
