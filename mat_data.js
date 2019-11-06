@@ -3,7 +3,7 @@ const mat = [
         navn: "Vårruller 3stk",
         pris: 29,
         inneholder: "Salat, gulrot, peanøtter",
-        allergener: ['nøtter'],
+        allergener: ['notter'],
         ekstra: ['mild']
     },
 

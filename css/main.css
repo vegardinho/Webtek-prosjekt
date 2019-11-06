@@ -10,7 +10,7 @@ body {
 }
 
 @media only screen and (max-width: 960px) {
-   body {
+   .oss {
       width: 90%;
       padding: 0;
    }
@@ -406,7 +406,7 @@ img.order_button
 
 .order_antall
 {
-    width: 2vw;
+    width: 4vw;
     height: 20%;
 }
 

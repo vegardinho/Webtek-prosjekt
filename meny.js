@@ -10,7 +10,7 @@ function setup_meny()
             <span class="mat_tittel">`+mat[item].navn+`</span>
             &nbsp&nbsp
             <span class="mat_pris">`+mat[item].pris+`kr</span>
-            <img src="img/add_button.png" id="`+mat[item].navn+`_button" class="order_button">
+            <img src="img/add_button.png" id="`+mat[item].navn+`_button" onclick="add(this.id)" class="order_button">
             <br>
             <span class='inneholder'>`+mat[item].inneholder+`</span>
         </div>`
@@ -26,8 +26,11 @@ function setup_meny()
 
     // Sorterer matretter etter allergener for lettere sortering
     mat.forEach(food => {
-        food.allergener.forEach(al => {
-            allergy_foods[al].push(food.navn)
+        food.allergener.forEach(all => {
+            if(all != "")
+            {
+                allergy_foods[all].push(food.navn)
+            }
         })
     })
 
@@ -49,6 +52,8 @@ function setup_meny()
     {
         for (var i = 0; i < handlekurv.length; i+=2)
         {
+            console.log(handlekurv[i])
+            console.log(Number(handlekurv[i+1]))
             add(handlekurv[i])
             document.getElementById("antall_"+handlekurv[i]).value = Number(handlekurv[i+1])
             updateHandlekurv()
@@ -249,7 +254,6 @@ function completeOrder()
 function main()
 {
     setup_meny()
-    addButtonFunctionality()
 }
 
 main()
