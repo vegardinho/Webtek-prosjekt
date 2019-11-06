@@ -75,8 +75,8 @@ a {
 
 .tekstboksgreie {
    background: rgba(255,255,255,.8);
-   padding-top: 5px;
-   padding-bottom: 5px;
+   padding-top: 10px;
+   padding-bottom: 10px;
    padding-left: 40px;
    padding-right: 40px;
    box-sizing: border-box;
@@ -85,7 +85,7 @@ a {
    top: 50%;
 }
 
-/* pointer events forhindrer teksten i √• bli gjeldende ramme for hover */
+/* pointer events forhindrer teksten i å bli gjeldende ramme for hover */
 .reveal_text {
    pointer-events: none;
    text-align: center;
