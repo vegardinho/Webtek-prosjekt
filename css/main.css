@@ -81,8 +81,9 @@ a {
    padding-right: 40px;
    box-sizing: border-box;
    position: absolute;
-   width: 70%;
+   width: 60%;
    top: 50%;
+   margin-left: 5%;
 }
 
 /* pointer events forhindrer teksten i å bli gjeldende ramme for hover */
