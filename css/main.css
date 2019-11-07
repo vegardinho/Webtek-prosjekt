@@ -537,6 +537,8 @@ li.nav_element a:hover {
 @media (max-width: 760px) {
    div#logo {
        float: none;
+       margin: auto;
+       padding: 10px 10px 5px 10px;
    }
 
    li.nav_element {
