@@ -1,3 +1,5 @@
+/* FELLES FOR ALLE FILER */ 
+
 @font-face {
    font-family: "Keep-Calm";
    src: url("../fonts/KeepCalm-Medium.ttf") format("truetype");
@@ -47,13 +49,23 @@ a {
  }
 
 
+@media only screen and (max-width: 800px) {
+   #epost_nr_adresse, #telefonnummer, #laget_av {
+      display: none;
+   }
+
+   #copyright {
+      width: 100%;
+   }
+}
+
+
 /* BRUKES I OM_OSS */
 
 /* Spesifikt for hele om-oss-html */
 .oss {
    overflow: auto;
    margin: auto;
-   margin-top: 7.5% !important;
    padding: 25px;
    width: 70%;
    
@@ -129,6 +141,7 @@ a {
    .oss {
       width: 90%;
       padding: 0;
+      margin-top: 5% !important;
    }
 
    #mobilPlassert {
@@ -139,13 +152,6 @@ a {
       display: none;
    }
 
-   #epost_nr_adresse, #telefonnummer, #laget_av {
-      display: none;
-   }
-
-   #copyright {
-      width: 100%;
-   }
 
    .kolonne {
       width: 100%;
