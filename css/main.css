@@ -384,6 +384,9 @@ footer > div > p > a
         height: 55%;
     }
 
+    .inneholder {
+       display: none;
+    }
 }
 
 #meny
