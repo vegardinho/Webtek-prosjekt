@@ -171,6 +171,30 @@ div.top_text {
    transform: translate(-50%, -50%)
 }
 
+@media (max-width: 750px) {
+   #index_background {
+      height: 510px;
+   }
+
+   div.top_text {
+      padding: 20px 10px 20px 10px;
+   }
+}
+
+@media (max-width: 560px) {
+   #index_background {
+      height: 560px;
+   }
+
+   div.top_text {
+      padding: 5px;
+   }
+
+   h1#index_tittel {
+      font-size: 2em;
+   }
+}
+
 div.top_text a {
    color: #0093B3;
    text-decoration: none;
