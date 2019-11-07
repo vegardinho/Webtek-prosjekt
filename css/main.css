@@ -39,6 +39,12 @@ a {
    color: #FF8519;
 }
 
+ .skygge {
+   -webkit-box-shadow: 0px 10px 22px -2px rgba(0,0,0,0.35);
+   -moz-box-shadow: 0px 10px 22px -2px rgba(0,0,0,0.35);
+   box-shadow: 0px 10px 22px -2px rgba(0,0,0,0.35);
+ }
+
 
 /* BRUKES I OM_OSS */
 .oss {
@@ -59,9 +65,6 @@ a {
    width: 100%;
    height: auto;
    transition: 0.25s;
-   -webkit-box-shadow: 0px 10px 22px -2px rgba(0,0,0,0.75);
-   -moz-box-shadow: 0px 10px 22px -2px rgba(0,0,0,0.75);
-   box-shadow: 0px 10px 22px -2px rgba(0,0,0,0.75);
 }
 
 .kolonne {
@@ -131,6 +134,14 @@ a {
       position: relative;
       width: 100%;
       margin-top: 5px;
+      top: 0%;
+      margin-left: 0%;
+   }
+
+   .skygge {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
    }
    
    .visTekst .reveal_text {
@@ -147,9 +158,7 @@ a {
    .desktop_only {
       display: none;
    }
-
 }
-
 
 /* BRUKES I INDEX */
 #index_background {
@@ -229,11 +238,6 @@ div.top_text a:hover {
    background-color: white;
    overflow: auto;
 }
- .skygge {
-   -webkit-box-shadow: 0px 10px 22px -2px rgba(0,0,0,0.35);
-   -moz-box-shadow: 0px 10px 22px -2px rgba(0,0,0,0.35);
-   box-shadow: 0px 10px 22px -2px rgba(0,0,0,0.35);
- }
 
 .news_pic_wrapper {
    width: 50%;
