@@ -8,7 +8,7 @@ function setup_meny()
         `<div id="`+mat[item].navn+`" class="matretter">
             <span class="mat_tittel">`+mat[item].navn+`</span>
             &nbsp&nbsp
-            <span class="mat_pris">`+mat[item].pris+`kr</span>
+            <span class="mat_pris">`+mat[item].pris+`,-</span>
             <img src="img/add_button.png" id="`+mat[item].navn+`_button" onclick="add(this.id)" class="order_button">
             <br>
             <span class='inneholder'>`+mat[item].inneholder+`</span>
@@ -199,7 +199,7 @@ function add(id)
         `<div id="`+mat[item].navn+`_takeaway" class="matretter">
             <span class="mat_tittel">`+mat[item].navn+`</span>
             &nbsp&nbsp
-            <span class="mat_pris">`+mat[item].pris+`kr</span>
+            <span class="mat_pris">`+mat[item].pris+`,-</span>
             <br>
             <span>Antall</span>
             <input type="number" min="0" value="1" class="order_antall" id="antall_`+mat[item].navn+`">
