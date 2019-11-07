@@ -10,12 +10,12 @@ body {
 }
 
 p, label {
-   font-family: 'Roboto Slab', 'Georgia';
+   font-family: 'Roboto Slab', 'Georgia', serif;
 }
 
 h1,h2,h3,h4,h5 {
    text-align: center;
-   font-family: 'Keep-Calm', 'Arial Bold';
+   font-family: 'Keep-Calm', 'Arial Bold', sans-serif;
    color: black;
 }
 
