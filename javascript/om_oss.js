@@ -1,9 +1,11 @@
 //Finner alle kolonnelementer, og hoyden til elementene
-var kolonner = document.getElementsByClassName("kolonne");
-var kolHeight = kolonner[1].offsetHeight;
+var kolonner;
+var kolHeight;
 var loadedSite = false;
 
 window.onload = function() {
+   kolonner = document.getElementsByClassName("kolonne");
+   kolHeight = kolonner[1].offsetHeight;
    loadedSite = true;
 }
 
@@ -18,15 +20,15 @@ function inViewport(element) {
 }
 
 document.addEventListener('scroll', function sjekkElement(event) {
-   for (var i = 0; i < kolonner.length; i++) {
-      if (inViewport(kolonner[i]) && loadedSite && 
-	 !kolonner[i].classList.contains("desktop_only")) {
-	 if (!(kolonner[i].classList.contains("visTekst"))) {
-	    kolonner[i].classList.add("visTekst");
+   if (loadedSite) {
+      for (var i = 0; i < kolonner.length; i++) {
+	 if (inViewport(kolonner[i]) && !kolonner[i].classList.contains("desktop_only")) {
+	    if (!(kolonner[i].classList.contains("visTekst"))) {
+	       kolonner[i].classList.add("visTekst");
+	    }
+	 } else {
+	    kolonner[i].classList.remove("visTekst");
 	 }
-      } else {
-	 kolonner[i].classList.remove("visTekst");
       }
    }
 });
-
