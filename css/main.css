@@ -23,6 +23,7 @@ h1 {
     font-size: 3em;
  }
 
+ /* Brukes for å omgi tekst med en hvit firkant bak */
 .hvit_boks {
    width: 100%;
    background: white;
@@ -47,18 +48,24 @@ a {
 
 
 /* BRUKES I OM_OSS */
+
+/* Spesifikt for hele om-oss-html */
 .oss {
    overflow: auto;
    margin: auto;
-   margin-top: 2% !important;
-   padding: 50px;
+   margin-top: 7.5% !important;
+   padding: 25px;
    width: 70%;
    
 }
+
 .bilde {
    width: 30%;
    height: auto;
-   
+}
+
+#mobilPlassert {
+   display: none;
 }
 
 .fullbredde {
@@ -80,18 +87,25 @@ a {
    opacity: 0.25;
    transition: 0.25s;
 }
+ #butangen_container {
+    position: relative;
+   width: 100%;
+ }
 
+/* Hvit halvtransparent boks til tekst */
 .tekstboksgreie {
+   position: absolute;
    background: rgba(255,255,255,.8);
    padding-top: 10px;
    padding-bottom: 10px;
    padding-left: 40px;
    padding-right: 40px;
    box-sizing: border-box;
-   position: absolute;
-   width: 60%;
+   width: 80%;
+   margin-left: 10%;
+   text-align: center;
    top: 50%;
-   margin-left: 5%;
+   transform: translate(0%, -50%);
 }
 
 /* pointer events forhindrer teksten i å bli gjeldende ramme for hover */
@@ -117,6 +131,14 @@ a {
       padding: 0;
    }
 
+   #mobilPlassert {
+      display: inline;
+   }
+
+   #desktopPlassert {
+      display: none;
+   }
+
    #epost_nr_adresse, #telefonnummer, #laget_av {
       display: none;
    }
@@ -133,8 +155,9 @@ a {
       position: relative;
       width: 100%;
       margin-top: 5px;
-      top: 0%;
+      top: 0;
       margin-left: 0%;
+      transform: none;
    }
 
    .skygge {
