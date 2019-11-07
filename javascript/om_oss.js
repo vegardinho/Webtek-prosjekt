@@ -1,6 +1,11 @@
 //Finner alle kolonnelementer, og hoyden til elementene
 var kolonner = document.getElementsByClassName("kolonne");
 var kolHeight = kolonner[1].offsetHeight;
+var loadedSite = false;
+
+window.onload = function() {
+   loadedSite = true;
+}
 
 //Sjekker om elementet er i vinduet til enheten
 function inViewport(element) {
@@ -14,7 +19,8 @@ function inViewport(element) {
 
 document.addEventListener('scroll', function sjekkElement(event) {
    for (var i = 0; i < kolonner.length; i++) {
-      if (inViewport(kolonner[i]) && !kolonner[i].classList.contains("desktop_only")) {
+      if (inViewport(kolonner[i]) && loadedSite && 
+	 !kolonner[i].classList.contains("desktop_only")) {
 	 if (!(kolonner[i].classList.contains("visTekst"))) {
 	    kolonner[i].classList.add("visTekst");
 	 }
