@@ -1,3 +1,4 @@
+// Legger til header i body først
 document.body.innerHTML =
 `<header>
 
@@ -20,34 +21,38 @@ document.body.innerHTML =
 
 </header>` + document.body.innerHTML
 
-const nav = document.querySelectorAll('li.nav_element a')
+const nav = document.querySelectorAll('li.nav_element a') // Velger alle .nav_element
 
-function active(page) {
+function active(page) { // Forandrer farger for valgt element
     nav[page].style.color = 'white'
     nav[page].style.backgroundColor = '#ff7800'
 }
 
+// Lager en variabel for sidenavn_js span på hver side
 const index = document.getElementById('index_js')
 const meny = document.getElementById('meny_js')
 const kontakt = document.getElementById('kontakt_js')
 const om_oss = document.getElementById('om_oss_js')
 
-let link = ""
+let link = "" 
 
+// Sjekker om sidenavn_js span er på siden. Skjer hver gang en av sidene lastes inn.
+// Lager korrekt link for hver siden. Brukes for validator.
 if (document.contains(index)) {
-    active(3)
+    active(3) // 4. li
     link = "index.html"
-} else if (document.contains(meny)) {
-    active(2)
+} else if (document.contains(meny)) { // Vil her bruke funksjonen active og vil velge 3. element fra alle de valgte li elementene
+    active(2) // 3. li
     link = "meny.html"
 } else if (document.contains(om_oss)) {
-    active(0)
+    active(0) // 1. li
     link = "om_oss.html"
 } else if (document.contains(kontakt)) {
-    active(1)
+    active(1) // 2. li
     link = "kontakt.html"
 }
 
+// "Appender" footer til slutten av body
 document.body.innerHTML +=
 `<footer>
 <div id="laget_av">
@@ -67,6 +72,7 @@ document.body.innerHTML +=
 </div>
 </footer>`
 
+// Korrigerer for position fixed på header/navbar
 if (window.innerWidth <= 760) {
    document.querySelector(wrapperSelector).style.marginTop = document.getElementById("header").clientHeight/4.4 + "px";
 } else if (document.contains(kontakt)) {
