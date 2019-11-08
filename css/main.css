@@ -12,12 +12,13 @@ body {
 }
 
 p, label, input, textarea {
-   font-family: 'Roboto Slab', 'Georgia';
+   font-family: 'Roboto Slab', 'Georgia', serif;
+
 }
 
 h1,h2,h3,h4,h5 {
    text-align: center;
-   font-family: 'Keep-Calm', 'Arial Bold';
+   font-family: 'Keep-Calm', 'Arial Bold', sans-serif;
    color: black;
 }
 
@@ -195,7 +196,6 @@ a {
    width: 100%;
    height: 500px;
    background-size: cover;
-   text-align: center;
    position: relative;
 }
 
@@ -209,35 +209,12 @@ div.top_text {
    width: 70%;
    margin: auto;
    padding: 50px 20px 50px 20px;
+   text-align: center;
    background-color: rgba(255, 255, 255, 0.7);
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%)
-}
-
-@media (max-width: 750px) {
-   #index_background {
-      height: 510px;
-   }
-
-   div.top_text {
-      padding: 20px 10px 20px 10px;
-   }
-}
-
-@media (max-width: 560px) {
-   #index_background {
-      height: 560px;
-   }
-
-   div.top_text {
-      padding: 5px;
-   }
-
-   h1#index_tittel {
-      font-size: 2em;
-   }
 }
 
 div.top_text a {
@@ -309,6 +286,30 @@ div.top_text a:hover {
    .news_text_wrapper {
       float: none;
       width: 100%;
+   }
+}
+
+@media (max-width: 750px) {
+   #index_background {
+      height: 510px;
+   }
+
+   div.top_text {
+      padding: 20px 10px 20px 10px;
+   }
+}
+
+@media (max-width: 560px) {
+   #index_background {
+      height: 560px;
+   }
+
+   div.top_text {
+      padding: 5px;
+   }
+
+   h1#index_tittel {
+      font-size: 2em;
    }
 }
 
@@ -577,7 +578,7 @@ div#header {
    padding: 0;
    background-color: white;
    box-shadow: 1px 1px 10px black ;
-   display: inline-block;
+   display: inline-block; /* Brukes for å kunne forandre på høyden pga. padding på li.nav_element. */
    position: fixed;
    top: 0;
    z-index: 1;
@@ -603,7 +604,7 @@ li.nav_element {
 }
 
 li.nav_element a {
-   display:block;
+   display: block; /* Fikser så den tar hele høyden. Kombineres med float right for å få alt til å gå mot høyre. */
    padding: 10px 20px 10px 20px;
    background-color: white;
    text-decoration: none;
@@ -616,7 +617,7 @@ li.nav_element a:hover {
    color: #b35300;
 }
 
-
+/* Mobil og tablet størrelse */
 @media (max-width: 760px) {
    div#logo {
        float: none;
