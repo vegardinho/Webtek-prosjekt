@@ -5,21 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="header_and_footer/header_footer.css">
-        <link rel="stylesheet" type="text/css" href="css/kontakt_oss.css">
-        <title>Kontakt oss - Samspiseriet</title>
+        <title>Kontakt oss</title>
     </head>
 
     <body>
         <div id="sporreskjema">
 
-                <form id="form" onsubmit="send_form()"> <!-- action, method, id? -adassada-->
+                <form id="form" onsubmit="send_form()">
                     <label>Navn 
-                        <input class="kontaktInput" type="name" placeholder="Ditt navn" id="navn" autofocus>
+                        <input class="kontaktInput" type="text" placeholder="Ditt navn" id="navn" >
                     </label>
                     <label>E-post * 
                         <!-- Krever at email skrives inn -->
-                        <input class="kontaktInput" required type="email" placeholder="E-mail (påkrevd)" id="mail"  >
+                        <input class="kontaktInput" required type="email" placeholder="Obligatorisk" id="mail"  >
                     </label>
                     <label>Mobilnummer
                         <input class="kontaktInput" type="tel" placeholder="Mobilnummer" id="mobil" >
@@ -42,10 +40,11 @@
 
         </div>
         <div id="kart_boks"></div>
-	<span id="kontakt_js"></span>
-        <script src="maps.js"></script>
-	<script>let wrapperSelector = "#sporreskjema"</script>
-        <script src="header_and_footer/header.js"></script>
+	    <span id="kontakt_js"></span>
+        <script src="javascript/maps.js"></script>
+        <script src="javascript/kontakt.js"></script>
+	    <script>let wrapperSelector = "#sporreskjema"</script>
+        <script src="javascript/header.js"></script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV2Nyq4wq-we8qwZvF2JkEwF4nO1iq2Bk&callback=hentKart">
         </script>        

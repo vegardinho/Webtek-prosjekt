@@ -11,10 +11,12 @@
 </head>
 <body>
    
-    <!--Topp del-->
    <main id="index">
+     
+     <!--Topp del-->
     <div id="index_background">
-        <div class="top_text">
+        <div class="top_text skygge">
+          
         <h1 id="index_tittel">Velkommen til Samspiseriet!</h1>
 
         <p>
@@ -24,20 +26,22 @@
         </p>
         <p>
             Har du spørsmål eller er det noe du mener vi bør forbedre. Da er det bare å sende inn til oss.
-            Du finner et eget skjema her <a href="kontakt.html">Kontakt oss</a>
+            Du finner et eget skjema på <a href="kontakt.html">kontakt oss</a>
         </p>
         <p>
             Husk at du alltid er velkommen hos oss!
         </p>
+          
         </div>
     </div>
-
-    <!--Header tittel-->
+     
     <section id="news">
-        <div id="news_header">Nyheter</div>
-        
+      
+      <!--Header tittel-->
+        <div id="news_header" class="skygge">Nyheter</div>
+     
         <!--Artikkel 1-->
-            <div class="margin_box">
+            <div class="skygge margin_box">
                 <div class="news_pic_wrapper">
                     <div class="news_pic">
                         <img src="img/news_1.jpg" alt="restaurant-lokale">
@@ -52,7 +56,7 @@
             </div>
 
         <!--Artikkel 2-->
-            <div class="margin_box">
+            <div class="skygge margin_box">
                 <div class="news_pic_wrapper">
                     <div class="news_pic">
                         <img src="img/news_2.jpg" alt="Frukt og grønt">
@@ -65,10 +69,12 @@
                     </div>
                 </div>
             </div>
+      
     </section>
    </main>
    
     <span id="index_js"></span>
-    <script src="header_and_footer/header.js"></script>
+    <script>let wrapperSelector = "main"</script>
+    <script src="javascript/header.js"></script>
 </body>
 </html>
