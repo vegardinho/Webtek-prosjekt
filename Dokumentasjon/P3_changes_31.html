@@ -15,78 +15,150 @@
             <!-- LINK TO START PAGE -->
             
             <h3 id="authors">
-                P3: Changes - Samspiseriet
-                Joon-Erik Sæther, Lucas Emmes, Magnus Skjølberg, Vegard Landsver
+                P3: Changes - Samspiseriet <br>
+                Joon-Erik Sæther, Lucas Emmes, Magnus Skjølberg, Vegard Landsverk <br>
                 08.11.19
             </h3>
             
         </header>
         <main>
             <section>
-                <h2>Our client: Morten Butangen</h2>
-                <p>Our client Morten Butangen wants to promote the new restaurant for students and people on the go. It’s called “Samspiseriet” and will help students not worry about the problems related to making and buying food. Instead he thinks students should be able to enjoy food without feeling like it’s a burden. He also sees the importance of earning enough money to keep the restaurant alive. Therefore he wants a webpage for quick and easy promotion, and at the same time have services that makes the customers happy.</p>
+                <h3><a href="https://vegardinho.github.io/">Link til siden</a></h3>
             </section>
             <section>
-                <h2>Purpose and goal</h2>
-                <p>The purpose of the site is to offer potential customers a contact- and promoting point for the restaurant. The site should include menus, contact information, the ability to book a table, and a general description of the restaurant. It should showcase the interior and exterior of the restaurant, and provide photos of meals offered. 
-                    Our client wants to provide the customers a quick, healthy and affordable meal, also having take-away as an option. Located in Trondheim, and only one block away from X makes this goal very much achievable, according to our client. 
+                <h2>Generelt om P3</h2>
+                <p>
+                    Denne delen vil inneholde alt som ble endret underveis i forhold til planen vi la i P2. 
+                    Som forventet var det flere endringer, både på grunn av at den planlagte løsningen ikke var helt optimal, og på grunn av tid. 
+                    Det som ikke er nevnt her ble gjort som tiltenkt og beskrevet i P2.
+                    <br><br>
+                    Ser man på klientens forventninger og målsetninger oppfylte vi de viktigste. 
+                    Fokuset på målgruppen ble til en viss grad bortprioritert ettersom vi innså at 
+                    selve kodingen og funksjonene var viktigere enn å fylle siden med “falsk content”. 
+                    Vi ønsket opprinnelig en side som var veldig tilpasningsdyktig for mobiler, 
+                    ettersom den tiltenkte kundegruppen brukte hovedsaklig mobil. 
+                    Vi endte opp med en helt ok responsiv side som er brukervennlig. 
                 </p>
             </section>
             <section>
-                <h2>Audience</h2>
-                <p>The main appeal of the restaurant will be affordable, healthy, and quick meals. The audience will therefore probably turn out to be students, and other people that desire a quick and healthy meal. Most customers will be young, and therefore the website must be compatible with phones or smaller screens. </p>
+                <h2>Minimum requirements</h2>
+                <p>
+                    Opprinnelig var et minimumskrav “datasparende bidler” som skulle filtrere bort 
+                    unødvendige bilder dersom brukeren brukte mobil. 
+                    Dette innså vi ble vanskelig og til dels unødvendig, 
+                    og valgte derfor ikke å innføre dette minimumskravet.
+                    <br><br>
+                    Et annet krav var et “slideshow”. Selv om dette er en funksjon som sikkert hadde 
+                    vært tilbydende og grei å implementere, valgte vi å ikke gjennomføre det. 
+                    Behovet for et slideshow på hovedsiden (index.html) var ikke så stort som tiltenkt, 
+                    og vi ønskte heller å prioritere de andre funksjonalitetene. 
+                    Det kunne også blitt en unødvendig distraksjon for å lese det som står foran bildet. 
+                    <br><br>
+                    Bordreservasjon var kun et fremtidig mål og en tilleggsfunksjon dersom man fant tid 
+                    og ressurser. Det fant man ikke :)
+                </p>
             </section>
             <section>
-                <h2>The content and organization of the website</h2>
+                <h2>Page layout and appearance</h2>
+                <p> <!-- magnus? -->
+                    MAGNUS?:<br>
+                    Header, footer og main: 
+                    Størrelser på element i header osv.
+                    Content er 70%? 
+                    <br><br>
+                    Har lagt til script som sørger for at header vil indikere hvilken side du er på til enhver tid, 
+                    ved å markere linken med oransje bakgrunn og hvit skrift. 
+                    Headeren tar også mindre enn 10 - 15% av høyden av siden. Dette er for å gjøre at den ikke tar for stor plass. 
+                    Navigasjonsmeny-elementene tar ikke resten av plassen men prøver å opprettholde et større skille mellom den og logo. 
+                    Gjelder ikke i mindre størrelser før den bytter til versjon for mindre skjermer. 
+                    I mindre størrelser er knappen for å få fram navigasjonsmeny fjernet. 
+                    Dette var på grunn av for lite tid og for å gjøre nettsiden enklere å forstå. 
+                    Elementene vil vises hele tiden, men man kan scrolle forbi den. 
+                    Det gjør at å scrolle fra eller mot headeren blir på en måte knappen. 
+                    Den dekker samtidig ikke for mye slik at resten av contentet ikke “forsvinner”.    
+                    <br><br>
+                    Innholdet på footer er endret i forhold til det som ble beskrevet i P2.
+                    Anså ikke innholdet som viktig i det hele tatt, og la derfor kun inn noe 
+                    informasjon og hvem siden er lagd av. La også inn en validator i footer som ble forespurt av veileder :) 
+                    Gikk for oransj skrift istedenfor hvit som planlagt ettersom vi syns det så bedre ut sammens med 
+                    resten av innholdet på siden. Benyttet selvsagt fargepaletten.
+                </p>
+  
+            </section>
+            <section>
+                <h2>Content</h2>
+                <h4>Index</h4>
                 <ul>
-                    <li>Home (Frontpage)
-                        <ul>
-                            <li>Will display the name and logo of the restaurant in the header. Under the name and logo there will be hyperlinks to the rest of the webpage, as outlined below.  The rest of the frontpage will be dedicated to a picture of the restaurant, with contact information in the footer.</li>
-                        </ul>
+                    <li>
+                        Ingen slideshow som tidligere skrevet. 
+                        Kun et bakgrunnsbilde, men oppnår de samme målene.
                     </li>
-                    <li>About us
-                        <ul>
-                            <li>This page will contain information about the founders and history of the restaurant, who runs it, and what its purpose is.</li>
-                        </ul>
+                </ul>
+                <h4>Meny</h4>
+                <ul>
+                    <li>Har lagt til preferenser som ‘vegetar’ og ‘mild/sterk’. 
+                        Dersom noen av disse krysses av, vil bare retter som faller innenfor disse kategoriene vises frem.</li>
+                    <li>Bruker localStorage i stedet for cookies til å lagre handlekurven.</li>
+                    <li>Har lagt til ordre knapp i handlekurven som spør etter og validerer telefonnummer eller navn. 
+                        Tømmer handlekurven etter fullført bestilling (stod strengt tatt ikke i P2 requirements, 
+                        så putter det her for sikkerhets skyld) </li>
+                </ul>
+                <h4>Kontakt oss</h4>
+                <ul>
+                    <li>
+                        Ingen bot validator/cache. Ble ikke ofret noen tanker, og var i tillegg noe som kunne bli lagt til 
+                        dersom man så nødvendigheten til det. Boksene i mockupen var i feil rekkefølge. 
+                        Rekkefølgen vi har er den mest naturlige og logiske.
                     </li>
-                    <li>Contact us
-                        <ul>
-                            <li>Would need to include contact information. A link to a facebook page, phone number for ordering, and an email for every type of feedback. Will probably be locked in the footnote (or besides it?)</li>
-                        </ul>
-                    </li>
-                    <li>Menu 
-                        <ul>
-                            <li>Would show the menu of the restaurant, with pictures of the dishes. Will also include the content of the dishes and show allergies. (Every dish will have a link/button which adds the dish to a shopping list so you can get it as a takeaway)</li>
-                        </ul>
-                    </li>
-                    <li>Table reservation
-                        <ul>
-                            <li>Will display a map of the restaurant, where customers can reserve a specific table at specific times. If the table is taken for </li>
-                        </ul>
+                </ul>
+                <h4>Om oss</h4>
+                <ul>
+                    <li>
+                        Ekstra skriptfunksjon som erstatter “hover” på desktop. 
+                        Skriptet emulerer endringene i “hover” når de gitte elementene er innenfor en x og y på vist skjerm. 
+                        For å forbedre leseligheten har vi endret tekstboksen på mobil, så den kommer etter bildet og ikke over, 
+                        som på desktop. Vi har også kun beholdt ett av tre avsluttende bilder, 
+                        fordi de tar opp svært mye plass på mobil, hvor vi har satt bredden til 100% fordi bildene 
+                        ellers ville vært veldig små.
                     </li>
                 </ul>
             </section>
             <section>
-                <h2>Specific requirements</h2>
-                <h4>Functional:</h4>
-                <ul>
-                    <li>Reserve a table</li>
-                    <li>Order takeout</li>
-                    <li>The user should be able to sort meals based on allergies</li>
-                    <li>Slideshow of a few meals</li>
-                </ul>
-                <h4>Non-functional:</h4>
-                <ul>
-                    <li>The user should be able to get from any page to any other page in a single click</li>
-                    <li>The user should have access to the menu at all times</li>
-                    <li>The logo will always be on display in some way or form</li>
-                    <li>Mobile versions of the page should require less data to load, so as to preserve the viewers mobile data</li>
-                </ul>
+                <h2>Responsivt</h2>
+                <p>Siden er responsiv og brukervennlig. Den største endringen her er hvordan menyen/header skulle vises på en 
+                    mindre skjerm. Planen var å skjule headeren og erstatte den med et responsivt symbol. 
+                    Istedenfor lot vi headeren være vertikal istedenfor horisontal Den vil heller ikke være festet til 
+                    toppen av skjermen på mobil, men heller scrolle sammen med resten av websiden. 
+                    Dette alternativet fungerer fint ettersom man på mindre skjermer (hovedsakelig nettbrett og mobil) 
+                    vil klare å scrolle raskt og effektivt. Ideelt sett ville man kanskje holdt seg til den planlagte løsningen, 
+                    men siden dette alternativet både var tidsbesparende og greit, gjorde vi det slik. 
+                    <br><br>
+                    Ellers ble det en endring (tilleggsfunksjon) på om oss siden. Dette ble beskrevet over. 
+                    Fjerner også deler av elementene i footer på mindre skjermer. 
+                </p>
             </section>
             <section>
-                <h2>Challenges</h2>
-                <p>As we expect a lot of customers to use their phone on the go, we need to keep in mind how much data is needed to load a certain page, especially the home page. Photos will be important to showcase the different and broad specter of meals, but they also require the most data. We will need to find a smooth solution on this problem. One suggestion is not having photos on the menu page, but maybe in a pdf-format. 
-                    Our goal as a team is to use mainly HTML and CSS. We might face some issues regarding ordering takeout or/and table reservation only using Javascript. Although we want to focus on the HTML and CSS part, the team is expecting to be in the need of JavaScript for a few different implementations. 
+                <h2>Andre krav i P3 - Hvem gjorde hva?</h2>
+                <p>
+                    Alle på gruppen fullførte minimumskravene sine som hver enkelt var ansvarlig for beskrevet i planen.
+                    <br><br>
+                    header.js - Lucas jobbet med moduleringen av header og footer - Magnus jobbet med utseende og funksjonalitet til headeren. 
+                    <br><br>
+                    meny.js - Lucas jobbet med menyen og handlekurven, + sortering<br>
+                    mat_data.js - Lucas jobbet med å lage en liste med retter og dens egenskaper
+                    <br><br>
+                    kontakt.js - Joon jobbet med kontaktskjema<br>
+                    maps.js - Joon jobbet med implementering av google maps API
+                    <br><br>
+                    om_oss.js - Vegard jobbet med funksjonalitet for om_oss siden som lar deg “hovere” på mobil versjon av siden
+                    <br><br>
+                    main.css - Alle jobbet med css styling av sidene
+                    <br><br>
+                    Alle jobbet og hadde hovedansvar for hver sin .html, akkurat slik som spesifisert i planen. 
+                    Vegard arbeidet med logo og henting av bilder.<br> 
+                    Bildene ble hentet herfra: <a href="https://unsplash.com/">Unsplash</a>
+                    <br><br>
+                    Lucas og Magnus hadde kontroll og ansvar for moduleringen som beskrevet over.
                 </p>
             </section>
         </main>
