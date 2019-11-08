@@ -1,3 +1,7 @@
+// Google Maps API som henter et kart og lokasjon. 
+// Brukte https://developers.google.com/maps/documentation/javascript/tutorial 
+// for hjelp og inspirasjon
+
 function hentKart() {
     var koordinater = {lat:63.422563, lng: 10.394979}
 
