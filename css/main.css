@@ -452,7 +452,7 @@ footer > div > p > a
     border-bottom: 2px solid black;
 }
 
-label#valg_fix {
+label.valg_fix {
    display: block;
    text-align: center;
 }
