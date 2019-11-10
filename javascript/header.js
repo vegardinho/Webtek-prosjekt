@@ -55,21 +55,15 @@ if (document.contains(index)) {
 // "Appender" footer til slutten av body
 document.body.innerHTML +=
 `<footer>
-<div id="laget_av">
+
     <p>Lagd av: Joon, Lucas, Magnus, Vegard</p>
-</div>
 
-<div id="epost_nr_adresse">
     <p>samspiseriet@gmail.com</p>
-</div>
 
-<div id="telefonnummer">
     <p>666-69-420</p>
-</div>
 
-<div id="copyright">
     <p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fvegardinho.github.io%2F`+link+`">Samspiseriet© 2019</a></p>
-</div>
+
 </footer>`
 
 // Korrigerer for position fixed på header/navbar
